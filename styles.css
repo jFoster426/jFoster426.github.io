@@ -1,0 +1,26 @@
+body {
+    background-color: rgb(6, 8, 25);
+}
+
+.center {
+    margin: 0 auto;
+}
+
+.website-header-text {
+    font-family: "Audiowide", sans-serif;
+    color: white;
+    text-align: center;
+    font-size: 5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-top: 35px;
+    padding-bottom: 10px;
+}
+
+.empty1 {
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-gap: 1rem;
+}

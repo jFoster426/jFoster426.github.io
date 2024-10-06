@@ -1,0 +1,180 @@
+<style>
+    .text {
+        font-size: 24px;
+        text-align: left;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        white-space: pre-wrap;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .code {
+        font-size: 20px;
+        text-align: left;
+        color: green;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .center-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 40%;
+    }
+
+    h1 {
+        font-size: 48px;
+        text-align: left;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        white-space: pre-wrap;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    h2 {
+        font-size: 24px;
+        text-align: left;
+        color: white;
+        font-family: 'Times New Roman', Times, serif;
+        white-space: pre-wrap;
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .center-img {
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    .cursor-pointer {
+        cursor: pointer;
+    }
+
+    .code {
+        font-size: 20px;
+        text-align: left;
+        color: white;
+        font-family: 'Courier New', Courier, monospace;
+    }
+
+    .img-hover:hover {
+        border: solid;
+        border-width: 2px;
+        border-color: white;
+    }
+</style>
+
+<br>
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This is the third iteration of an automatic gate opening system primarily used for mail delivery. In apartment buildings or gated communities, normally the common gate to the building/complex is locked but the person requesting entry may use a keypad located outside the gate to dial the resident through an intercom. Some buildings route the intercom to the resident's cell phone, but where I currently live the only option is that the intercom rings the resident's landline phone. This makes it very difficult to accept mail since delivery drivers will not leave the package at the common gate and usually deliver the package to an access point far away from where I live.
+
+The PhoneOpener solves this problem by imitating a landline phone connected to the intercom. To open the gate, the resident normally presses the number 9 on the keypad. Since I do not have landline service to the unit, the landline phone only rings when someone is requesting entry through the front gate. The device simply needs to detect when the phone line rings, then pick up, send DTMF "9", then hang up and the gate will open. Simply writing:
+
+<i>"JUDD FOSTER BUZZ XX" (XX is the code to ring my unit's telephone)</i>
+
+in the delivery address for any package is usually enough to have packages deliver successfully.
+</pre>
+<br>
+<br>
+<h1>Mechanical Construction</h1>
+<br>
+<pre class="text">
+The enclosure is a standard project box from Hammond Manufacturing (P/N 1593L) which I had lying around.
+</pre>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/Hammond_1593L.jpg" onclick="window.open('Projects/PhoneOpener/Hammond_1593L.jpg')">
+<br>
+<pre class="text">
+I cut holes in the front and back end caps the appropriate size for RJ-11 and USB ports. Power is supplied externally through a 5 V USB phone charger and a USB A to B cable to keep the electronics as simple as possible.
+</pre>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/case_holes.jpg" onclick="window.open('Projects/PhoneOpener/case_holes.jpg')">
+<br>
+<br>
+<h1>Electronics</h1>
+<br>
+<pre class="text">
+The schematic for the PhoneOpener is shown below.
+</pre>
+<br>
+<img style="width:60%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/schematic.jpg" onclick="window.open('Projects/PhoneOpener/schematic.jpg')">
+<br>
+<pre class="text">
+To keep things simple, 5 V regulated power is already supplied via the USB port. The internal circuitry consists of only three main parts:
+
+    1) Ring Detector
+    2) Line Loader
+    3) DTMF Generator
+</pre>
+<br>
+<h2>1. Ring Detector</h2>
+<br>
+<pre class="text">
+The ring detector consists of D1, U1, R1, R2. The ring signal is 90 VRMS, 20 Hz AC sine wave, which is able to pass through D1 and activate U1. The output of U1 is active low and triggers an input on the microcontroller.
+
+I made a mistake when designing the ring detector circuit. Since the ring signal is 90 VRMS, the peak voltage is 127 V. The RMS voltage is dropped by the Zener diode (normal Zener voltage is 51 V with a 125 Ω impedance at 2.5 mA). The circuit can be modelled as an ideal voltage source consisting of the peak line voltage minus the Zener voltage minus the forward voltage of the LED (127 V - 51 V - 1.4 V) = 74.6 V, in series with the line impedance plus R2 plus the Zener impedance (900 Ω + 470 Ω + 125 Ω) = 1495 Ω. The total current that flows through the LED is 74.6 V / 1495 Ω = 50 mA. This is right at the limit of the absolute maximum rating for the LED in U1 (maximum DC current = 50 mA).
+
+Since the ring signal is AC, the full negative voltage (127 Vpk) is across U1 since D1 conducts in the negative half-cycle. This violates the absolute maximum rating of VR = 6 V for the LED.
+
+To solve these problems, I placed an anti-parallel 1N4148 diode across U1's LED to clamp the reverse voltage to 0.7 V, and changed R2 to 1.5 kΩ. I also added another 1N5262B in series with D1 but in the opposite polarity to make sure the voltage is dropped on both half-cycles.
+</pre>
+<br>
+<h2>2. Line Loader</h2>
+<br>
+<pre class="text">
+The line loader consists of R3, R9, RLY1 and F1. When a ring signal is detected from U1, the microcontroller closes RLY1 which connects F1, R3, R9 to the line. R3 loads the line and in series with the transformer winding, the off-hook DC line voltage is around 6 V. F1 consists of two windings of 100 turns each and couples the DTMF signal generated by the microcontroller on to the line. The Al value for the core is 1330 nH/turns^2, so the inductance of each winding is somewhere close to 13.3 mH for 100 turns. R9 and R3 plus the line impedance form a current divider. 470 Ω / (470 Ω + 470 Ω + 900 Ω) = 25.5 % of the current flows through the telephone line, with the other two-thirds flowing through R9. R9 can be adjusted to alter the amplitude of the DTMF signal on the line. I found that 470 Ω for R9 was good enough for the DTMF signal to be recognized by the entry gate.
+
+I also made a mistake when designing the line loader because I did not consider that the secondary of the transformer (the side connected to the telephone line) would eventually become saturated some time after RLY1 closes. This could be improved by placing a non-polarized capacitor in series with the winding to AC couple it. The value should be something with insignificant impedance at DTMF frequencies (100 µF presents Z = 1.86 Ω at 852 Hz which is the lowest frequency tone for DTMF "9"). The current divider consisting of R3 and R9 would also need to be modified. The sum of the resistances should be close to 470 Ω to load the line properly, but the current divider ratio should still be roughly 25.5 %. Replacing R3 with 0 Ω achieves this.
+
+Since placing a 100 µF non-polarized capacitor (which would be made up of 2x 220 µF polarized capacitors placed in series back to back) would take up a lot of board real-estate and the circuit works fine with the original design, I decided not to include this rework on the design.
+</pre>
+<br>
+<h2>3. DTMF Generator</h2>
+<br>
+<pre class="text">
+The DTMF generator consists of U4, U3, U2 and supporting components. The microcontroller (U4) generates the DTMF tone in software and writes values from a LUT directly to the DAC (U3). The signal is then buffered by U2 and both outputs are used to drive the transformer. The signal is AC coupled via C2 to avoid core saturation.
+</pre>
+<br>
+<br>
+<h1>Firmware</h1>
+<br>
+<pre class="text">
+The firmware was generated using Arduino IDE to keep things simple and to take advantage of the Serial print library for generating the sine table. In the setup() function, the commented code serves as a sine wave table generator. The LUT "SIN_WT" is stored in a 16-bit unsigned int which only uses the 12 LSB to drive the DAC.
+
+The main loop of the code runs continuously and waits for the ring input to drive low. Once the ring signal is low, the microcontroller turns on an LED and drives the relay which activates the line loader circuit. After a small 100 ms delay to wait for the contacts to settle, the DTMF tone is played through the DAC by repeatedly calling dac_write_16().
+
+The entry gate expects to hear DTMF "9" to open the gate. Frequencies 852 Hz and 1477 Hz are required to produce this tone. Stepping through the sine wave LUT at different speeds will alter the frequency of the generated sine wave. Two instances of the sine wave LUT are summed together while stepping through the LUT at different speeds which produces the DTMF tone. When generating the LUT, the offset value of 1000 was chosen because when the two sine waves are summed together, their DC offset will be 2000, which is about half of the full-scale DAC output of 12 bits or 4095. I chose to make the length of the sine wave table 256 elements since an 8-bit integer overflows to zero at 255. This simplifies the procedure for iterating through the sine-wave table because no code is needed to handle the overflow condition. The sine wave can be produced cleanly over multiple cycles because the remainder is added after the overflow event (e.g. to produce the 1477 Hz tone, the for loop looks up table indices 0 -> 30 -> 60 ... 210 -> 240 -> 15 -> 30. Note no firmware logic is required to have the index start correctly at 15 on the second cycle). Shorter LUTs increase distortion by creating harsher harmonics at higher frequencies but I did not run into any issues with the entry gate not recognizing the DTMF tone generated.
+
+The function "dac_write_16" bit bangs the microcontroller outputs which transfers the data to the DAC. The output is transferred as quickly as possible since there isn't much spare time for delay. At the end of the function, a for loop repeats a Nop instruction a specific number of times which can be changed to tune the frequency of both sine waves based on the crystal frequency. I used an oscilloscope to measure the two sine waves independently and tuned their frequencies to generate two peaks as close as possible to 852 Hz and 1477 Hz.
+
+The code is shown below and can be downloaded by clicking the "Download Code" link.
+</pre>
+<br>
+<a style="margin-left: 0px;" href="Projects/PhoneOpener/ArduinoVersion.ino">Download Code</a>
+<div style="background-color: black; width: 100%; height: 500px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-cpp" style="white-space: pre-wrap;">
+        Projects/PhoneOpener/ArduinoVersion.ino
+    </code></pre>
+</div>
+<br>
+<h1>Photos</h1>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/pcb_angle.jpg" onclick="window.open('Projects/PhoneOpener/pcb_angle.jpg')">
+<pre class="text" style="text-align: center;"><i>Printed Circuit Board Assembled</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/pcb_top.jpg" onclick="window.open('Projects/PhoneOpener/pcb_top.jpg')">
+<pre class="text" style="text-align: center;"><i>Printed Circuit Board Assembled (Alternate Angle)</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/case_no_top.jpg" onclick="window.open('Projects/PhoneOpener/case_no_top.jpg')">
+<pre class="text" style="text-align: center;"><i>Printed Circuit Board Mounted in Case</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/assembled.jpg" onclick="window.open('Projects/PhoneOpener/assembled.jpg')">
+<pre class="text" style="text-align: center;"><i>PhoneOpener Project Fully Assembled</i></pre>
