@@ -1,4 +1,14 @@
+// Set up the mutation observer because the DOM needs to be updated before code can
+// be added and then again before the code highlighting can run properly
+let targetNode = null;
+// Options for the observer (which mutations to observe)
+const config = { childList: true, subtree: true };
+// Create an observer instance that will eventually be linked to the callback function
+let observer = null;
+
+// Runs the first time the DOM loads the content
 document.addEventListener('DOMContentLoaded', (event) => {
+    targetNode = document.getElementById('body');
     loadContent();
 });
 
@@ -53,35 +63,59 @@ function loadContent() {
         });
     }
 
-    // Insert code contents
-    setTimeout(() => {
-        const codeElements = document.getElementsByTagName("code");
-    
-        console.log(codeElements.length);
-    
-        for (let i = 0; i < codeElements.length; i++) {
-            const codeElementName = codeElements[i].innerHTML;
-    
-            console.log(codeElementName);
-    
-            fetch(codeElementName).then(response => {
-                if (!response.ok) {
-                    throw new Error('Network response was not ok');
-                }
-                return response.text();
-            })
-            .then(data => {
-                codeElements[i].innerHTML = data; // Inserts the text into the code block
-            })
-            .catch(error => {
-                codeElements[i].innerHTML = `Error loading file: ${error}`;
-            });
-        }
-    }, 100);
+    // Create an observer instance linked to the callback function
+    observer = new MutationObserver(loadCode);
+    observer.observe(targetNode, config);
+    console.log('loadContent');
+}
 
-    setTimeout(() => {
-        hljs.highlightAll();
-    }, 500);
+function loadCode() {
+    // Disconnect the observer
+    observer.disconnect();
+
+    // Insert code contents
+    const codeElements = document.getElementsByTagName("code");
+
+    console.log(codeElements.length);
+
+    for (let i = 0; i < codeElements.length; i++) {
+        const codeElementName = codeElements[i].innerHTML;
+
+        console.log(codeElementName);
+
+        fetch(codeElementName).then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            codeElements[i].innerHTML = data; // Inserts the text into the code block
+        })
+        .catch(error => {
+            codeElements[i].innerHTML = `Error loading file: ${error}`;
+        });
+    }
+
+    // Create an observer instance linked to the callback function
+    if (codeElements.length > 0) {
+        observer = new MutationObserver(highlightCode);
+    }
+    else {
+        observer = new MutationObserver(loadCode);
+    }
+    observer.observe(targetNode, config);
+    console.log('loadCode');
+}
+
+function highlightCode() {
+    // Disconnect the observer
+    observer.disconnect();
+
+    // Highlight the code
+    hljs.highlightAll();
+
+    console.log('highlightCode');
 }
 
 function loadProject(projectName) {
