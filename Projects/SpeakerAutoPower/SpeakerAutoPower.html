@@ -1,0 +1,29 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This project has been a work in progress for many years, with the first revision dating back to 2020. I have a couple of relatively large studio monitors that I use to listen to music at my work desk. However, I only listen to music sometimes and would like to be able to turn the speakers on and off, because the speakers dissipate a significant amount of power even when no music is being played. With the power switch being in the back, it makes it annoying to turn the speakers on and off repeatedly.
+
+I need to be able to detect when audio is playing and switch power to the speaker accordingly. It would also be nice if the speaker could stay on for a period of time, or could still be switched manually from the front even if no audio was detected. This is useful for Teams or video calls when I might be speaking for a long time and others are silent. In this case, I would not want the speaker to turn off and prevent me from hearing the first couple words of someone's reply as the speaker turns back on. Instead, the speaker could be manually switched on for the entire meeting and then switched back to automatic mode when the meeting is over.
+
+The circuit that controls the speaker should also be as power efficient as possible otherwise there's no point.
+</pre>
+<br>
+<br>
+<h1>Mechanical Construction</h1>
+<br>
+<pre class="text">
+For this project, I decided to try the custom metal fabrication service from SendCutSend. I designed a custom aluminum panel that had pre-defined holes to the existing screw pattern on the back of my speaker. The panel also had holes which I counter-sunk to put bolts in from the other side to secure the main PCB on some standoffs. The main PCB has two audio jacks (for input and output), as well as the power input which accepts the same IEC320 power cable that would connect to the speaker. The power output for the speaker is soldered directly to the board. I was able to find a part on Digikey that would plug into the speaker but at the same time allowed me to solder it directly to the board. This simplified the mechanical construction of the project a lot.
+
+There is also a second part to the metal panel which accepts a second PCB. This PCB sits on top of the speaker when it's mounted. I decided to design the second PCB with a button for manual override control, and a display to show the different modes/states of the system. The panel protrudes from the top of the speaker which allows the second PCB to act as a front panel and the button/display to be mounted facing forward. This makes it a lot more accessible to the user.
+</pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/metal_panel.jpg" onclick="window.open('Projects/PhoneOpener/metal_panel.jpg')">
+<br>
+<br>
+<h1>Electronics</h1>
+<br>
+<pre class="text">
+The electronics for the Speaker Auto Power consists of two main parts: the main PCB and the front panel PCB. The two boards are joined together with a ribbon cable.
+</pre>
+

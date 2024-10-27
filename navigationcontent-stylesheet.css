@@ -1,0 +1,21 @@
+a {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 136, 164);
+    text-decoration: underline;
+    font-family: 'Arial', Times, serif;
+    /* Long words don't overflow into the text portion of the blog post */
+    overflow-wrap: break-word;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.navigation-h1 {
+    font-size: 32px;
+    text-align: left;
+    color: white;
+    font-family: 'Arial', Times, serif;
+    white-space: pre-wrap;
+    padding: 0px;
+    margin-left: 20px;
+}
