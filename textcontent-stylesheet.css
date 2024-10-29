@@ -35,6 +35,10 @@ h2 {
     margin: 0px;
 }
 
+ol li ol {
+    list-style-type: lower-alpha;
+}
+
 .center-img {
     margin-left: auto;
     margin-right: auto;

@@ -21,9 +21,146 @@ There is also a second part to the metal panel which accepts a second PCB. This 
 <img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/metal_panel.jpg" onclick="window.open('Projects/PhoneOpener/metal_panel.jpg')">
 <br>
 <br>
-<h1>Electronics</h1>
+<h1>Electronics - Main PCB</h1>
 <br>
 <pre class="text">
-The electronics for the Speaker Auto Power consists of two main parts: the main PCB and the front panel PCB. The two boards are joined together with a ribbon cable.
+The main PCB holds the audio amplifiers, main microcontroller and AC control circuitry.
 </pre>
+<br>
+<h2>Top Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0001.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0001.jpg')">
+<br>
+<pre class="text">
+The top sheet contains the main connectors for the board (input and output for power and audio). The audio is wired between the two connectors in a pass-through configuration and the electronics on the board are referenced to the audio jack reference. The GND (earth) from the power connectors passes through the board but does not connect to the internal circuitry to prevent creating a ground loop.
+</pre>
+<br>
+<h2>Speaker Auto Power Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0002.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0002.jpg')">
+<br>
+<pre class="text">
+This sheet abstracts the various components of the design. The schematics are explained sheet by sheet below.
+</pre>
+<br>
+<h2>DC-DC Converter Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0003.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0003.jpg')">
+<br>
+<pre class="text">
+I chose to use a 5 W AC-DC converter from CUI Devices. The output of the power supply is 5 V which provides power to downstream logic and regulators.
+</pre>
+<br>
+<h2>MCU Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0004.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0004.jpg')">
+<br>
+<pre class="text">
+The main IC (PIC18F45K22) is broken out on this sheet. I connected the output of the audio amplifiers to ADC inputs on the microcontroller through an input filter and biasing stage. The input filter is just a high-pass filter with -3 dB point at 32 Hz, and also biases the ADC voltage to a 2.5 V DC offset. The clamping diodes ensure that large voltage swing coming from the audio amplifiers would not damage the PIC.
+</pre>
+<br>
+<h2>Regulators Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0005.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0005.jpg')">
+<br>
+<pre class="text">
+I used two isolated power modules from CUI Devices to create a split +/- 12 V rail. Using isolated modules makes it simpler to chain them together in series to get the split rail. These supplies are switching, so I regulated them using LM317 and LM337 linear regulators on the positive and negative rails, to achieve a final output voltage of +/- 10 V. This voltage is used as an analog supply to power the audio amplifiers.
+</pre>
+<br>
+<h2>Amplifier Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0006.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0006.jpg')">
+<br>
+<pre class="text">
+I used two different circuit configurations on this sheet, so I could have the possibility to customize the sensitivity/behvaiour of the system. 
 
+In the upper chain, I used two non-inverting amplifiers with G = 101 and fc = 33.9 kHz to amplify the input signal. The output feeds into a difference amplifier with G = 10 and fc = 15.9 kHz to convert the JACK_P and JACK_N signals into a single-ended output that the ADC can read. The intention of this upper chain is to magnify small input voltages into a signal large enough for the ADC to read. This way the PIC could detect that there is audio playing even when it is very quiet.
+
+In the lower chain, I fed the audio input into two unity gain buffers, with their output leading to a difference amplifier with fc = 15.9 kHz but also with unity gain. The intention of this circuit was to provide some way for the PIC to see the volume of the incoming audio signal, in case that information was important later when I wrote the software.
+</pre>
+<br>
+<h2>AC Switch Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0007.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0007.jpg')">
+<br>
+<pre class="text">
+I didn't want to use a relay to control the speaker, so I decided to use a triac instead. The triac is controlled with an opto-isolator which also has a triac output that is triggered by the AC_EN signal on the zero-crossing. I also included a common-mode choke and inrush current limiter since the studio monitor this circuit powers has a relatively large capacitor following a full-bridge rectifier at the AC input, which might cause high inrush currents and damage the triac.
+</pre>
+<br>
+<h2>Peripherals Sheet</h2>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/Schematic_page-0008.jpg" onclick="window.open('Projects/SpeakerAutoPower/Schematic_page-0008.jpg')">
+<br>
+<pre class="text">
+This sheets houses the ULN2803 IC which is just an 8-line open-collector Darlington driver. The outputs connect to the ribbon cable connector through some series resistors so that the front panel PCB could just include the LED display and nothing more. There are also three more connectors that can be used for button inputs. In the final project I ended up using only one of these connectors.
+</pre>
+<br>
+<br>
+<h1>Electronics - Front Panel PCB</h1>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/FrontPanel_page-0001.jpg" onclick="window.open('Projects/SpeakerAutoPower/FrontPanel_page-0001.jpg')">
+<br>
+<pre class="text">
+The front panel is very simple - a 7-segment LED display that connects to the ULN2803 output driver on the main board. The PIC displays different codes on the LED display depending on the state of the system.
+</pre>
+<br>
+<br>
+<h1>PCB Layout - Main Board</h1>
+<br>
+<pre class="text">
+Stuff...
+</pre>
+<br>
+<br>
+<h1>Firmware</h1>
+<br>
+<pre class="text">
+I wrote the firmware without the MPLAB X IDE and simply used the command line tools provided by Microchip to compile the source, which makes the code simpler. The firmware is broken up into two files: config.h (which only serves to configure all the configuration registers in the IC) and main.c (which is the main source file).
+
+In the main.c file, I configured the PIC's clock source to the 1 MHz internal oscillator to save on components. I also initialized the ADC (to read the analog inputs) and Timer0 (to implement a timeout feature so that the speaker waits some amount of time after audio stops playing before turning off). These two peripherals are handled in the interrupt subroutine.
+
+The interrupt subroutine handles the ADC conversion as well as when Timer0 interrupts. The ADC conversion is compared to the previous ADC conversion. If the difference is greater than the <i>threshold</i> variable, it means there is audio playing and the speaker should turn on. This is done by decrementing the <i>count</i> variable until it reaches zero. If audio is continuously being played, the <i>count</i> variable will reach zero and stay at zero until the audio stops playing.
+
+The other section of the interrupt subroutine handles the Timer0 interrupt. Timer0 simply serves to increment the count variable each time it triggers. If audio is playing, the <i>count</i> variable decrements faster than it increments, which keeps the speaker on. If audio is not playing, <i>count</i> slowly increases and after a certain amount of time, the speaker turns off. The <i>buttonCount</i> variable is also incremented here which has to do with the manual mode of the system (when the user presses the button).
+
+The main loop has four sections:<ol><li>Compare the <i>count</i> variable to the <i>timeout</i> variable. If <i>count</i> is less than <i>timeout</i>, then the speaker is on.</li>
+<li>Compare the <i>buttonCount</i> variable to the <i>buttonTimeout</i> variable. If <i>buttonCount</i> is less than <i>buttonTimeout</i>, then the speaker is on.</li>
+<li>Check the state of pin RC0 (connected to the button). If the button is pressed, reset <i>buttonCount</i>.</li>
+<li>Update the 7-segment display showing one of two states:</li><ol style="list-style-type: lower-alpha;">
+<li>Automatic mode: The speaker power is being controlled by the audio. The display will show characters "0" through "F" (hexadecimal codes) representing the formula:
+<span style="font-family: 'Courier New', Courier, monospace"><b>int</b>(<i>count</i> / <i>buttonCount</i>) * 16</span>.</li>
+<li>Manual mode: The speaker power is controlled by the button. If the button is pressed, the speaker remains on for a set period of time, regardless of if there is audio playing or not. The LED display shows a pattern indicating the system is in this mode.</li></ol></ol>
+The code is shown below and can be downloaded by clicking the "Download Code" links.
+</pre>
+<br>
+<a style="margin-left: 0px;" href="Projects/SpeakerAutoPower/config.h">Download Code</a>
+<div style="background-color: black; width: 100%; height: 500px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-c" style="white-space: overflow;">
+        Projects/SpeakerAutoPower/config.h
+    </code></pre>
+</div>
+<br>
+<a style="margin-left: 0px;" href="Projects/SpeakerAutoPower/main.c">Download Code</a>
+<div style="background-color: black; width: 100%; height: 500px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-c" style="white-space: overflow;">
+        Projects/SpeakerAutoPower/main.c
+    </code></pre>
+</div>
+<br>
+<br>
+<h1>Photos</h1>
+<br>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="TODO" onclick="window.open('TODO.jpg')">
+<pre class="text" style="text-align: center;"><i>TODO</i></pre>
+<br>
+<br>
+<h1>Additional Files</h1>
+<br>
+<pre class="text">
+The Altium PCB project and Gerber files can be downloaded from the link below.
+</pre>
+<br>
+<a style="margin-left: 0px;" href="TODO">Altium Project & Gerber Files</a>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 28 Oct 2024</i></pre>

@@ -70,6 +70,7 @@ function loadContent() {
 }
 
 function loadCode() {
+    console.log('loadCode()');
     // Disconnect the observer
     observer.disconnect();
 
@@ -81,8 +82,6 @@ function loadCode() {
     for (let i = 0; i < codeElements.length; i++) {
         const codeElementName = codeElements[i].innerHTML;
 
-        console.log(codeElementName);
-
         fetch(codeElementName).then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -90,7 +89,14 @@ function loadCode() {
             return response.text();
         })
         .then(data => {
-            codeElements[i].innerHTML = data; // Inserts the text into the code block
+            // Replace HTML special chars with encoded versions
+            const encodedData = data
+                .replace(/&/g, "&amp;")
+                .replace(/</g, "&lt;")
+                .replace(/>/g, "&gt;");
+            // Inserts the text into the code block
+            codeElements[i].innerHTML = encodedData;
+            codeElements[i].classList.add('loadCode');
         })
         .catch(error => {
             codeElements[i].innerHTML = `Error loading file: ${error}`;
@@ -105,21 +111,28 @@ function loadCode() {
         observer = new MutationObserver(loadCode);
     }
     observer.observe(targetNode, config);
-    console.log('loadCode');
 }
 
 function highlightCode() {
-    // Disconnect the observer
-    observer.disconnect();
+    console.log('highlightCode()');
+    
+    var documentFullyLoaded = true;
+
+    document.querySelectorAll("code").forEach((e) => {
+        if (!e.classList.contains('loadCode'))
+        {
+            documentFullyLoaded = false;
+        }
+    });
+
+    // Only proceed if all the code has loaded in (loadCode has inserted the loadCode class on it)
+    if (documentFullyLoaded == false) {
+        return;
+    }
 
     // Highlight the code
     hljs.highlightAll();
 
-    console.log('highlightCode');
-}
-
-function loadProject(projectName) {
-    const contentElements = document.getElementsByClassName("textcontent");
-    contentElements[0].id = projectName;
-    loadContent();
+    // Disconnect the observer
+    observer.disconnect();
 }
