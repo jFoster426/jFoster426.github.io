@@ -18,7 +18,16 @@ For this project, I decided to try the custom metal fabrication service from Sen
 There is also a second part to the metal panel which accepts a second PCB. This PCB sits on top of the speaker when it's mounted. I decided to design the second PCB with a button for manual override control, and a display to show the different modes/states of the system. The panel protrudes from the top of the speaker which allows the second PCB to act as a front panel and the button/display to be mounted facing forward. This makes it a lot more accessible to the user.
 </pre>
 <br>
-<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/PhoneOpener/metal_panel.jpg" onclick="window.open('Projects/PhoneOpener/metal_panel.jpg')">
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/metal_panel.png" onclick="window.open('Projects/SpeakerAutoPower/metal_panel.png')">
+<pre class="text" style="text-align: center;"><i>Custom metal panel designed for the project</i></pre>
+<br>
+<br>
+<pre class="text">
+I modelled the entire assembly including the two PCBs in Solidworks to make sure it would work.
+</pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/assembly_solidworks.png" onclick="window.open('Projects/SpeakerAutoPower/assembly_solidworks.png')">
+<pre class="text" style="text-align: center;"><i>The final assembly rendered in Solidworks (view from the speaker side)</i></pre>
 <br>
 <br>
 <h1>Electronics - Main PCB</h1>
@@ -108,8 +117,15 @@ The front panel is very simple - a 7-segment LED display that connects to the UL
 <h1>PCB Layout - Main Board</h1>
 <br>
 <pre class="text">
-Stuff...
+I had to take high voltage layout practices into consideration when laying out this PCB. Rounded corners and adequate spacing are essential to prevent breakdown or eventual insulation failure due to long time at voltage. The left side of the PCB is the low-voltage section which is isolated from the AC input and connected directly to the shield on the audio input jack. The right side contains the high voltage layout. I customized the TO-220 package for the triac to increase the spacing between the pads.
+
+Design rules were set up to maintain greater than 1.4 mm (1.29 mm in certain locations) which complies with the minimum trace space requirement for IPC2221B which is 1.25 mm for external layers (uncoated) at 300 VDC.
+
+The PCB layout as viewed in Altium Designer is shown below.
 </pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/altium_layout.jpg" onclick="window.open('Projects/SpeakerAutoPower/altium_layout.jpg')">
+<pre class="text" style="text-align: center;"><i>PCB layout for the main PCB as viewed in Altium Designer</i></pre>
 <br>
 <br>
 <h1>Firmware</h1>
@@ -150,8 +166,16 @@ The code is shown below and can be downloaded by clicking the "Download Code" li
 <br>
 <h1>Photos</h1>
 <br>
-<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="TODO" onclick="window.open('TODO.jpg')">
-<pre class="text" style="text-align: center;"><i>TODO</i></pre>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/assembled_front.jpg" onclick="window.open('Projects/SpeakerAutoPower/assembled_front.jpg')">
+<pre class="text" style="text-align: center;"><i>Speaker Auto Power project fully assembled (front)</i></pre>
+<br>
+<br>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/assembled_back.jpg" onclick="window.open('Projects/SpeakerAutoPower/assembled_back.jpg')">
+<pre class="text" style="text-align: center;"><i>Speaker Auto Power Project fully assembled (back)</i></pre>
+<br>
+<br>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="Projects/SpeakerAutoPower/pic_programmer.jpg" onclick="window.open('Projects/SpeakerAutoPower/pic_programmer.jpg')">
+<pre class="text" style="text-align: center;"><i>PIC programmer for the Speaker Auto Power project</i></pre>
 <br>
 <br>
 <h1>Additional Files</h1>
@@ -160,7 +184,7 @@ The code is shown below and can be downloaded by clicking the "Download Code" li
 The Altium PCB project and Gerber files can be downloaded from the link below.
 </pre>
 <br>
-<a style="margin-left: 0px;" href="TODO">Altium Project & Gerber Files</a>
+<a style="margin-left: 0px;" href="Projects/SpeakerAutoPower/SpeakerAutoPower.zip">Altium Project & Gerber Files</a>
 <br>
 <br>
-<pre class="text" style="text-align: center"><i>Last Updated: 28 Oct 2024</i></pre>
+<pre class="text" style="text-align: center"><i>Last Updated: 29 Oct 2024</i></pre>
