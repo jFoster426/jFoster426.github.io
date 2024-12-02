@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This project is a simple FM transmitter originally intended to transmit the audio from my guitar wirelessly over an FM channel. It can also be used to transmit any mono audio signal over FM in the 88-108 MHz band.
+</pre>
+<br>
+<br>
+<h1>Electronics</h1>
+<br>
+<pre class="text">
+The schematic for the FM Transmitter is shown below.
+</pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/FMTransmitter/schematic.jpg" onclick="window.open('Projects/FMTransmitter/schematic.jpg')">
+<br>
+<pre class="text">
+The circuit consists of three parts, a VCO, li-ion charge controller and a boost regulator.
+
+The li-ion battery charger is built into the PCB so that I can leave a regular li-ion battery plugged into the board and connect a micro-USB cable to charge the battery. Since the MCP73831 is always connected to the battery when the switch is in the off position, I manually measured the quiescent current draw of the IC from the battery to make sure it would not quickly drain the cell. The current draw was too small to measure using an ordinary DMM, so I needed to use a large current shunt and a precise voltmeter to measure the current. With a 2.5 kΩ current shunt, the voltage drop was only 0.043 mV (43 µV) which yields a quiescent current of only 17.2 nA! This current is so small that the self-discharge of the cell would play more of a role in discharging it over long periods of time. With a 2 kΩ resistor on the PROG pin, the charge current is set to 500 mA. Two 1 kΩ resistors were used for BOM consolidation and to allow for the charge current to be adjusted more easily in the future if needed.
+
+The PAM2401 is a simple boost regulator IC which I used to step up the battery voltage to a constant 5 V. The voltage used to power the VCO needs to be constant otherwise the frequency will drift as the battery discharges. The switching frequency is about 1 MHz which is well outside of the audio band and will not show up as interference in the demodulated FM, but it might show up in adjacent channels if it is mixed with the carrier. However I don't really care about that because the device is very low power and with only a few meters of range, it won't interfere with other devices.
+
+The main part of the circuit is the MAX2606 VCO IC. The MAX250X series of ICs are VCOs that operate in various frequency bands. The MAX2606 operates in the 70-150 MHz band. It requires minimal components, only an external inductor and a tuning voltage. The DC tuning voltage is controlled by a trimmer potentiometer which divides the supply voltage. I glued it to the PCB at a right angle using hot glue. The tuning voltage is also AC coupled to the audio input which provides the modulation. The negative differential output of the MAX2606 is unused, only the positive output is used. and connects directly to the header for the antenna. Since the output of the chip is open-collector, the 1 kΩ pull-up is driving the antenna, which gives the circuit very low power output.
+
+When I originally designed the circuit in 2019, I didn't know whether or not to AC couple the antenna. I decided to design the circuit with both options of directly shorting the antenna and connecting it through the capacitor C4. Connecting the antenna (which I made using a piece of wire cut to 1/4 wavelength) to either pin of the header made no difference in the power output because the impedance of C4 is almost a short circuit at 100 MHz. Either way, it was a good learning experience for when I first tested the design.
+</pre>
+<br>
+<br>
+<h1>Photos</h1>
+<br>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="Projects/FMTransmitter/3d.jpg" onclick="window.open('Projects/FMTransmitter/3d.jpg')">
+<pre class="text" style="text-align: center;"><i>3D Render in Altium Designer</i></pre>
+<br>
+<br>
+<img style="width: 100%;" class="center-img cursor-pointer img-hover" src="Projects/FMTransmitter/assembled.jpg" onclick="window.open('Projects/FMTransmitter/assembled.jpg')">
+<pre class="text" style="text-align: center;"><i>Photo of the Assembled PCB</i></pre>
+<br>
+<br>
+<h1>Additional Files</h1>
+<br>
+<pre class="text">
+The Altium PCB project and Gerber files can be downloaded from the link below.
+</pre>
+<br>
+<a style="margin-left: 0px;" href="Projects/FMTransmitter/FMTransmitter.zip">Altium Project & Gerber Files</a>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 01 Dec 2024</i></pre>
