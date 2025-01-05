@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This small test board was inspired by some troubleshooting I did at work some time ago. A circuit using a THS4513 was implemented on one of the designs but was unstable and sometimes oscillated. When reviewing the PCB layout I discovered that the datasheet recommends to void planes underneath the amplifier input and outputs, to avoid parasitic capacitance on those nodes. I designed this test board to have two variations of the same amplifier circuit, but the layout varied under the second circuit with the planes removed under the amplifier inputs. A third circuit was also added in case I wanted to measure crosstalk between the two amplifiers.
+</pre>
+<br>
+<br>
+<h1>PCB Design</h1>
+<br>
+<pre class="text">
+The PCB was designed in Altium Designer, with the layout copied from the PCB design from work. The circuit was copy/pasted three times, the iteration furthest to the right has the planes removed under the amplifier and passive component pads which is more clear by zooming into the image.
+</pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/THS4513Test/AltiumPCB.png" onclick="window.open('Projects/THS4513Test/AltiumPCB.png')">
+<pre class="text" style="text-align: center;"><i>Altium PCB project</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/THS4513Test/PCB-annotated.png" onclick="window.open('Projects/THS4513Test/PCB-annotated.png')">
+<pre class="text" style="text-align: center;"><i>Assembled PCB with ports labelled</i></pre>
+<br>
+<br>
+<h1>Measurements</h1>
+<br>
+<pre class="text">
+I performed the measurements on my Siglent SVA1032X (SVA1075X) VNA. For each circuit, port 1 was connected to the input, Port 2 was connected to the positive output, and the negative output was terminated into 50 Ohms. S21 measurements are shown in the plots below.
+
+Quite a bit of gain peaking is visible in the variant of the circuit without the planes removed, which gives a hint into the circuit's instability. Just by removing the planes reduces the peaking by quite a significant amount as shown in the second figure.
+
+The final circuit implemented at work involved removing the planes underneath the IC and passives along with adding some additional passive components to reduce the bandwidth of the amplifier since such a high bandwidth was not needed.
+</pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/THS4513Test/leftside.png" onclick="window.open('Projects/THS4513Test/leftside.png')">
+<pre class="text" style="text-align: center;"><i>Frequency response of amplifier without planes removed</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/THS4513Test/rightside.png" onclick="window.open('Projects/THS4513Test/rightside.png')">
+<pre class="text" style="text-align: center;"><i>Frequency response of amplifier with planes removed</i></pre>
+<br>
+<br>
+<h1>Additional Files</h1>
+<br>
+<pre class="text">
+The Altium PCB project and Gerber files can be downloaded from the link below.
+</pre>
+<br>
+<a style="margin-left: 0px;" href="Projects/THS4513Test/THS4513Test.zip">Altium Project & Gerber Files</a>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 04 Jan 2025</i></pre>
+<br>
