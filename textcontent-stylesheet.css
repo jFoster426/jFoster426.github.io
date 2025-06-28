@@ -25,6 +25,18 @@ h1 {
     margin: 0px;
 }
 
+.h1-line {
+    font-size: 32px;
+    text-align: left;
+    color: white;
+    font-family: 'Arial', Times, serif;
+    white-space: pre-wrap;
+    font-weight: bold;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 5px;
+}
+
 h2 {
     font-size: 24px;
     text-align: left;
@@ -60,4 +72,101 @@ ol li ol {
     border: solid;
     border-width: 2px;
     border-color: white;
+}
+
+/*******/
+
+.job-entry {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+
+.job-entry img {
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+    object-fit: contain;
+    background: #f0f0f0;
+}
+
+.job-info {
+    flex: 1;
+}
+
+.job-title {
+    font-weight: bold;
+    font-size: 24px;
+    text-align: left;
+    color: white;
+    font-family: 'Arial', Times, serif;
+}
+
+.job-company {
+    color: #999;
+    font-size: 20px;
+    text-align: left;
+    font-family: 'Arial', Times, serif;
+}
+
+.job-details {
+    color: #555;
+    margin-top: 4px;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Arial', Times, serif;
+}
+
+.job-location {
+    color: #555;
+    margin-top: 4px;
+    font-size: 16px;
+    text-align: left;
+    font-family: 'Arial', Times, serif;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #eee;
+    margin: 16px 0;
+}
+
+.url-pre {
+    font-size: 20px;
+    text-align: left;
+    color: rgb(255, 136, 164);
+    text-decoration: none;
+    font-family: 'Arial', Times, serif;
+    cursor: pointer;
+}
+
+.url-pre:hover {
+    text-decoration: underline;
+    color: rgb(255, 200, 210);
+}
+
+.about-section {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #ddd;
+    position: relative;
+}
+
+/* Float the image to the right */
+.about-profile-img {
+    float: right;
+    width: 30%;
+    min-width: 250px;
+    height: auto;
+    border-radius: 20%;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Optional: clearfix to contain the floated image */
+.about-section::after {
+    content: "";
+    display: table;
+    clear: both;
 }

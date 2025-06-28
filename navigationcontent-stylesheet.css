@@ -1,13 +1,18 @@
-a {
+.url {
     font-size: 20px;
     text-align: left;
     color: rgb(255, 136, 164);
-    text-decoration: underline;
+    text-decoration: none;
     font-family: 'Arial', Times, serif;
     /* Long words don't overflow into the text portion of the blog post */
     overflow-wrap: break-word;
     margin-left: 20px;
     cursor: pointer;
+}
+
+.url:hover {
+    text-decoration: underline;
+    color: rgb(255, 200, 210);
 }
 
 .navigation-h1 {
