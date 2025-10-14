@@ -1,5 +1,0 @@
-Removed Pin From Net: NetName=GND Pin=U2-4
-Removed Pin From Net: NetName=GND Pin=U2-8
-Added Pin To Net: NetName=VEE Pin=U2-4
-Added Pin To Net: NetName=VCC Pin=U2-8
-Added Member To Class: ClassName=DiffProbe Member=Component J1 CON-SMA-EDGE-S

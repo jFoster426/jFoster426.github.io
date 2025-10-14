@@ -1,0 +1,74 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+I designed this low voltage differential probe as a side project intended to measure the output of the THS4513 amplifiers (see "THS4513 Test Board" project). It is a simple low-cost differential amplifier mounted on a PCB with an SMA connector that I can interface directly into my network analyzer.
+
+Power is applied through the 10-pin header on the bottom side of the board. This keeps the board design very small and it can be placed in hard to reach places while the cord runs out to the battery pack or power supply.
+
+For testing, the board was powered through my lab power supplies but building a simple adapter to make it battery powered would be a significant improvement. 6x AA batteries would be used (three for generating the +5 V rail, and three more for the -5 V rail).
+</pre>
+<br>
+<br>
+<h1>Photos</h1>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/diffprobe_top.jpg" onclick="window.open('Projects/DiffProbe/diffprobe_top.jpg')">
+<pre class="text" style="text-align: center;"><i>Printed Circuit Board Assembled (Top)</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/diffprobe_bottom.jpg" onclick="window.open('Projects/DiffProbe/diffprobe_bottom.jpg')">
+<pre class="text" style="text-align: center;"><i>Printed Circuit Board Assembled (Bottom)</i></pre>
+<br>
+<br>
+<h1>Schematic</h1>
+<br>
+<pre class="text">
+The schematic for the differetial probe is shown below.
+
+Two mods were added after the board was ordered:
+- The PD pin is active low and I mistakenly tied it low on the board. The pin was lifted and a wire soldered between the lifted pin and +VS.
+- Added compensation capacitors in parallel with R4 and R5. The values were determined based on what I had on hand, but the value for the capacitor in parallel with R5 should be about 10x smaller than the capacitor in parallel with R4 (due to the resistor values). The actual values were determined experimentally to get the flattest frequency response.
+
+In future board revisions, I will add spots for compensation capacitors or include a low value trimmer capacitor in parallel with R5 that I can tune the frequency response. This might affect high frequency performance but it would be interesting to experiment with since currently the probe looks to be slightly under-compensated.
+
+Also, using a 200 R resistor instead of 220 R, and 0.1 % values instead of the standard 1 % will dial the DC gain in at exactly 20 dB. Currently on the network analyzer it is slightly off.
+</pre>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/schematic_with_mods.png" onclick="window.open('Projects/DiffProbe/schematic_with_mods.png')">
+<br>
+<br>
+<h1>Measurements</h1>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/diffprobe_test_setup.jpg" onclick="window.open('Projects/DiffProbe/diffprobe_test_setup.jpg')">
+<pre class="text" style="text-align: center;"><i>Test Setup for Differential-Mode Measurement</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/diffprobe.png" onclick="window.open('Projects/DiffProbe/diffprobe.png')">
+<pre class="text" style="text-align: center;"><i>Differential-Mode Response</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/diffprobe_cmrr.jpg" onclick="window.open('Projects/DiffProbe/diffprobe_cmrr.jpg')">
+<pre class="text" style="text-align: center;"><i>Test Setup for Common-Mode Measurement</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/DiffProbe/cmrr.png" onclick="window.open('Projects/DiffProbe/cmrr.png')">
+<pre class="text" style="text-align: center;"><i>Common-Mode Response</i></pre>
+<br>
+<br>
+<h1>Additional Files</h1>
+<br>
+<pre class="text">
+The Altium PCB project and Gerber files can be downloaded from the link below.
+</pre>
+<br>
+<a class="url-pre" href="Projects/DiffProbe/DiffProbe-Altium.zip">Altium Project & Gerber Files</a>
+<br>
+<br>
+<pre class="text">
+The LTSpice simulation deck can be downloaded from the link below.
+</pre>
+<br>
+<a class="url-pre" href="Projects/DiffProbe/DiffProbe-LTSpice.zip">LTSpice Simulation Deck</a>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 13 Oct 2025</i></pre>
