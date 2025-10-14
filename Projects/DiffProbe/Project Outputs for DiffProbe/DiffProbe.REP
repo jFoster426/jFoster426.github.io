@@ -1,0 +1,273 @@
+*************************************************************
+FileName = DiffProbe.GBR
+AutoAperture = True
+*************************************************************
+Generating : L1
+      File : DiffProbe_Copper_L1.gbr
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : L2
+      File : DiffProbe_Copper_L2.gbr
+
+    Adding Layer      : L2
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : L3
+      File : DiffProbe_Copper_L3.gbr
+
+    Adding Layer      : L3
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D27
+    D28
+    D29
+*************************************************************
+
+*************************************************************
+Generating : L4
+      File : DiffProbe_Copper_L4.gbr
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D19
+    D22
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : DiffProbe_Legend_Top.gbr
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D34
+    D35
+    D36
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : DiffProbe_Legend_Bot.gbr
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D23
+    D35
+    D37
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : DiffProbe_Soldermask_Top.gbr
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : DiffProbe_Soldermask_Bot.gbr
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D43
+    D44
+    D45
+    D47
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : DiffProbe_Paste_Top.gbr
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : L1
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+    D20
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : DiffProbe_Paste_Bot.gbr
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : L4
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D15
+    D16
+    D17
+    D19
+    D30
+    D31
+    D32
+*************************************************************
+
+*************************************************************
+Generating : Board Shape
+      File : DiffProbe_Board_Shape.gbr
+
+    Adding Layer      : Board Shape
+
+
+Used DCodes :
+    D54
+*************************************************************
+
+*************************************************************
+Generating : Dimensions
+      File : DiffProbe_Dimensions.gbr
+
+    Adding Layer      : Dimensions
+
+
+Used DCodes :
+    D34
+    D55
+*************************************************************
+
+*************************************************************
+Generating : Top Designator
+      File : DiffProbe_Top_Designator.gbr
+
+    Adding Layer      : Top Designator
+
+
+Used DCodes :
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Bottom Designator
+      File : DiffProbe_Bottom_Designator.gbr
+
+    Adding Layer      : Bottom Designator
+
+
+Used DCodes :
+    D56
+*************************************************************
+
+*************************************************************
+Generating : Non-plated through-hole drill file
+      File : DiffProbe_NPTH_Drill.gbr
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Plated through-hole drill file
+      File : DiffProbe_PTH_Drill.gbr
+
+
+Used DCodes :
+    D57
+    D58
+*************************************************************
+

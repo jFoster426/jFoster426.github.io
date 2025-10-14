@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=PS.+28V Pin=C1-1
+Removed Pin From Net: NetName=PS.+28V Pin=C2-1
+Removed Pin From Net: NetName=PS.+28V Pin=J2-1
+Removed Pin From Net: NetName=PS.+28V Pin=J3-1
+Removed Pin From Net: NetName=PS.+28V Pin=L1-2
+Removed Pin From Net: NetName=PS.+28V Pin=L2-2
+Added Pin To Net: NetName=NetC1_1 Pin=C1-1
+Added Pin To Net: NetName=NetC1_1 Pin=J2-1
+Added Pin To Net: NetName=NetC1_1 Pin=L1-2
+Added Net: Name=NetC1_1
+Added Pin To Net: NetName=NetC2_1 Pin=C2-1
+Added Pin To Net: NetName=NetC2_1 Pin=J3-1
+Added Pin To Net: NetName=NetC2_1 Pin=L2-2
+Added Net: Name=NetC2_1

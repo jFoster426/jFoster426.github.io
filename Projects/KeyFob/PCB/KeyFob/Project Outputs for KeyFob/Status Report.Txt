@@ -1,0 +1,21 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Project [KeyFob.PrjPcb]
+   Generated File[KeyFob_Copper_Signal_Top.gbr]
+   Generated File[KeyFob_Copper_Signal_Bot.gbr]
+   Generated File[KeyFob_Legend_Bot.gbr]
+   Generated File[KeyFob_Soldermask_Bot.gbr]
+   Generated File[KeyFob_Legend_Top.gbr]
+   Generated File[KeyFob_Soldermask_Top.gbr]
+   Generated File[KeyFob_Profile.gbr]
+   Generated File[KeyFob_NPTH_Drill.gbr]
+   Generated File[KeyFob_PTH_Drill.gbr]
+   Generated File[KeyFob.RUL]
+   Generated File[KeyFob.EXTREP]
+   Generated File[KeyFob.REP]
+
+
+Files Generated   : 12
+Documents Printed : 0
+
+Finished Output Generation At 4:45:44 PM On 2021-09-20

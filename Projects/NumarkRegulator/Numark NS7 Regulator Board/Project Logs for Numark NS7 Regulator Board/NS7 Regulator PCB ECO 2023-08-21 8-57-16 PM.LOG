@@ -1,0 +1,40 @@
+Added Component: Designator=C3(Cap,Alum,Thru,D10,H17.5)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/YXG.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Rubycon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "50YXG220MEFCT810X16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "1189-3771-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C4(Cap,Alum,Thru,D10,H17.5)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.rubycon.co.jp/wp-content/uploads/catalog-aluminum/YXG.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Rubycon"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "50YXG220MEFCT810X16"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "1189-3771-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=L1(IND,WIREWOUND,12x12,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.we-online.de/katalog/datasheet/7447709101.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Würth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "7447709101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "732-1248-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=L2(IND,WIREWOUND,12x12,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.we-online.de/katalog/datasheet/7447709101.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Würth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "7447709101"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "732-1248-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PS.+28V Pin=C3-1
+Added Pin To Net: NetName=PS.COM Pin=C3-2
+Added Pin To Net: NetName=PS.+28V Pin=C4-1
+Added Pin To Net: NetName=PS.COM Pin=C4-2
+Added Pin To Net: NetName=PS.+28V Pin=L1-1
+Added Pin To Net: NetName=PS.+28V Pin=L1-2
+Added Pin To Net: NetName=PS.+28V Pin=L2-1
+Added Pin To Net: NetName=PS.+28V Pin=L2-2
+Added Member To Class: ClassName=NS7 Regulator Member=Component C3 220uF
+Added Member To Class: ClassName=NS7 Regulator Member=Component C4 220uF
+Added Member To Class: ClassName=NS7 Regulator Member=Component L1 100uH
+Added Member To Class: ClassName=NS7 Regulator Member=Component L2 100uH

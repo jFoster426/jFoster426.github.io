@@ -6,6 +6,7 @@
     white-space: pre-wrap;
     padding: 0px;
     margin: 0px;
+    line-height: 1.6;
 }
 
 .center-img {
@@ -169,4 +170,21 @@ hr {
     content: "";
     display: table;
     clear: both;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+}
+
+.social-icons a img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.15s, opacity 0.15s;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.1);
 }

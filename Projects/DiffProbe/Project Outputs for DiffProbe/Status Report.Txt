@@ -1,0 +1,27 @@
+Output: Gerber X2 Files
+Type  : GerberX2
+From  : Variant [[No Variations]] of Project [DiffProbe.PrjPcb]
+   Generated File[DiffProbe_Copper_L1.gbr]
+   Generated File[DiffProbe_Copper_L2.gbr]
+   Generated File[DiffProbe_Copper_L3.gbr]
+   Generated File[DiffProbe_Copper_L4.gbr]
+   Generated File[DiffProbe_Legend_Top.gbr]
+   Generated File[DiffProbe_Legend_Bot.gbr]
+   Generated File[DiffProbe_Soldermask_Top.gbr]
+   Generated File[DiffProbe_Soldermask_Bot.gbr]
+   Generated File[DiffProbe_Paste_Top.gbr]
+   Generated File[DiffProbe_Paste_Bot.gbr]
+   Generated File[DiffProbe_Board_Shape.gbr]
+   Generated File[DiffProbe_Dimensions.gbr]
+   Generated File[DiffProbe_Top_Designator.gbr]
+   Generated File[DiffProbe_Bottom_Designator.gbr]
+   Generated File[DiffProbe_NPTH_Drill.gbr]
+   Generated File[DiffProbe_PTH_Drill.gbr]
+   Generated File[DiffProbe.EXTREP]
+   Generated File[DiffProbe.REP]
+
+
+Files Generated   : 18
+Documents Printed : 0
+
+Finished Output Generation At 8:33:39 PM On 2023-09-19

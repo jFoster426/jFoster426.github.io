@@ -1,0 +1,1071 @@
+Change Component Designator: OldDesignator=D? NewDesignator=D1
+Change Component Designator: OldDesignator=D? NewDesignator=D2
+Change Component Designator: OldDesignator=D? NewDesignator=D3
+Change Component Designator: OldDesignator=D? NewDesignator=D4
+Change Component Designator: OldDesignator=D? NewDesignator=D5
+Change Component Designator: OldDesignator=D? NewDesignator=D6
+Change Component Designator: OldDesignator=D? NewDesignator=D7
+Change Component Designator: OldDesignator=D? NewDesignator=D8
+Change Component Designator: OldDesignator=D? NewDesignator=D9
+Change Component Designator: OldDesignator=D? NewDesignator=D10
+Change Component Designator: OldDesignator=D? NewDesignator=D11
+Change Component Designator: OldDesignator=D? NewDesignator=D12
+Change Component Designator: OldDesignator=D? NewDesignator=D13
+Change Component Designator: OldDesignator=D? NewDesignator=D14
+Change Component Designator: OldDesignator=D? NewDesignator=D15
+Change Component Designator: OldDesignator=D? NewDesignator=D16
+Change Component Designator: OldDesignator=D? NewDesignator=D17
+Change Component Designator: OldDesignator=D? NewDesignator=D18
+Change Component Designator: OldDesignator=D? NewDesignator=D19
+Change Component Designator: OldDesignator=D? NewDesignator=D20
+Change Component Designator: OldDesignator=D? NewDesignator=D21
+Change Component Designator: OldDesignator=J? NewDesignator=J3
+Change Component Designator: OldDesignator=J? NewDesignator=J4
+Change Component Designator: OldDesignator=J? NewDesignator=J5
+Added Component: Designator=C1(Cap,SMD,0805)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://search.murata.co.jp/Ceramy/image/img/A01X/G101/ENG/GRM21BR71C475KE51-01.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "GRM21BR71C475KE51L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "490-14466-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=C2(Cap,SMD,0805)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://content.kemet.com/datasheets/KEM_C1006_X5R_SMD.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "KEMET"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "C0805C106K8PACTU"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "399-4925-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J1(Conn,USB,MicroB,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://cdn.amphenol-icc.com/media/wysiwyg/files/documentation/datasheet/inputoutput/io_usb_micro.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Amphenol ICC (FCI)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "10118193-0001LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "609-4616-1-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J2(Term,Header,4Pin,2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://cdn.amphenol-icc.com/media/wysiwyg/files/drawing/10082627.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Amphenol ICC (FCI)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "10082627-404HLF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "609-10082627-404HLF-ND"; VariantName = "[No Variations]"
+Added Component: Designator=J6(Term,Header,3Pin,2.54mm)
+Add component (AddParameter): Name = "Created By"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://katalog.we-online.de/em/datasheet/6130xx11121.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Würth Elektronik"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "61300311121"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "732-5316-ND"; VariantName = "[No Variations]"
+Added Component: Designator=L1(IND,Wirewound,4x4,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://search.murata.co.jp/Ceramy/image/img/P02/JELF243A-0069.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Murata Electronics"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "LQH44PN100MP0L"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "?490-5330-1-ND?"; VariantName = "[No Variations]"
+Added Component: Designator=Q1(DPAK3 (TO-252 3 Lead))
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "NTD5865NLT4G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "NTD5865NLT4GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q2(DPAK3 (TO-252 3 Lead))
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "NTD5865NLT4G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "NTD5865NLT4GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=Q3(DPAK3 (TO-252 3 Lead))
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.onsemi.com/pub/Collateral/NTD5865NL-D.PDF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "ON Semiconductor"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "NTD5865NLT4G"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "NTD5865NLT4GOSCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R1(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R2(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R3(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R4(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R5(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R6(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R7(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R8(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R9(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R10(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R11(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R12(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R13(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R14(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R15(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R16(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R21(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R22(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R23(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R24(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R25(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R26(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R27(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R28(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R29(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R30(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R31(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R32(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R33(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R34(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R35(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R36(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R37(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R38(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R39(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R40(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R41(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R42(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R43(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R44(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R45(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R46(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R47(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R48(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R49(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R50(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R51(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R52(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R53(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R54(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R55(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R56(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R57(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R58(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R59(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R60(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R61(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.te.com/commerce/DocumentDelivery/DDEController?Action=srchrtrv&DocNm=1773204-3&DocType=DS&DocLang=English"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "TE Connectivity Passive Product"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "CRGCQ0603F150R"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "A129678CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R62(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R63(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.susumu.co.jp/common/pdf/n_catalog_partition05_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Susumu"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RR0816P-111-D"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "RR08P110DCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R64(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "311-1.00KHRCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R65(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "311-1.00KHRCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R66(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-0710KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "311-10.0KHRCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R67(RES,0603)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.yageo.com/upload/media/product/productsearch/datasheet/rchip/PYu-RC_Group_51_RoHS_L_10.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Yageo"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "RC0603FR-071KL"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "311-1.00KHRCT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=SW1(Switch,Tactile,SPST-NO,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://dznh3ojzb2azq.cloudfront.net/products/Tactile/PTS645/documents/datasheet.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "C&K"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "PTS645SK43SMTR92 LFS"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "CKN9084CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=U1(ESP32-WROOM-02U)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.espressif.com/sites/default/files/documentation/esp-wroom-02u_esp-wroom-02d_datasheet_en.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Espressif Systems"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "ESP-WROOM-02U (4MB)"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "1965-ESP-WROOM-02U(4MB)CT-ND"; VariantName = "[No Variations]"
+Added Component: Designator=U2(SOT23-5)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "http://www.ti.com/lit/ds/symlink/tps62203.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Texas Instruments"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "TPS62203DBVR"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "296-39452-1-ND"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C2-1
+Added Pin To Net: NetName=GND Pin=J1-0
+Added Pin To Net: NetName=GND Pin=J1-0
+Added Pin To Net: NetName=GND Pin=J1-0
+Added Pin To Net: NetName=GND Pin=J1-0
+Added Pin To Net: NetName=GND Pin=J1-5
+Added Pin To Net: NetName=GND Pin=J2-4
+Added Pin To Net: NetName=GND Pin=J6-3
+Added Pin To Net: NetName=GND Pin=Q1-3
+Added Pin To Net: NetName=GND Pin=Q2-3
+Added Pin To Net: NetName=GND Pin=Q3-3
+Added Pin To Net: NetName=GND Pin=SW1-3
+Added Pin To Net: NetName=GND Pin=SW1-4
+Added Pin To Net: NetName=GND Pin=U1-9
+Added Pin To Net: NetName=GND Pin=U1-13
+Added Pin To Net: NetName=GND Pin=U1-18
+Added Pin To Net: NetName=GND Pin=U1-19
+Added Pin To Net: NetName=GND Pin=U2-2
+Added Pin To Net: NetName=3V3 Pin=C2-2
+Added Pin To Net: NetName=3V3 Pin=J6-2
+Added Pin To Net: NetName=3V3 Pin=L1-2
+Added Pin To Net: NetName=3V3 Pin=R66-2
+Added Pin To Net: NetName=3V3 Pin=U1-1
+Added Pin To Net: NetName=3V3 Pin=U1-2
+Added Pin To Net: NetName=3V3 Pin=U2-4
+Added Net: Name=3V3
+Added Pin To Net: NetName=5V Pin=C1-2
+Added Pin To Net: NetName=5V Pin=J1-1
+Added Pin To Net: NetName=5V Pin=U2-1
+Added Pin To Net: NetName=5V Pin=U2-3
+Added Net: Name=5V
+Added Pin To Net: NetName=LDR Pin=J6-1
+Added Pin To Net: NetName=LDR Pin=U1-6
+Added Net: Name=LDR
+Added Pin To Net: NetName=LED_BK Pin=Q2-4
+Added Pin To Net: NetName=LED_BK Pin=R3-2
+Added Pin To Net: NetName=LED_BK Pin=R6-2
+Added Pin To Net: NetName=LED_BK Pin=R9-2
+Added Pin To Net: NetName=LED_BK Pin=R12-2
+Added Pin To Net: NetName=LED_BK Pin=R15-2
+Added Pin To Net: NetName=LED_BK Pin=R18-2
+Added Pin To Net: NetName=LED_BK Pin=R21-2
+Added Pin To Net: NetName=LED_BK Pin=R24-2
+Added Pin To Net: NetName=LED_BK Pin=R27-2
+Added Pin To Net: NetName=LED_BK Pin=R30-2
+Added Pin To Net: NetName=LED_BK Pin=R33-2
+Added Pin To Net: NetName=LED_BK Pin=R36-2
+Added Pin To Net: NetName=LED_BK Pin=R39-2
+Added Pin To Net: NetName=LED_BK Pin=R42-2
+Added Pin To Net: NetName=LED_BK Pin=R45-2
+Added Pin To Net: NetName=LED_BK Pin=R48-2
+Added Pin To Net: NetName=LED_BK Pin=R51-2
+Added Pin To Net: NetName=LED_BK Pin=R54-2
+Added Pin To Net: NetName=LED_BK Pin=R57-2
+Added Pin To Net: NetName=LED_BK Pin=R60-2
+Added Pin To Net: NetName=LED_BK Pin=R63-2
+Added Net: Name=LED_BK
+Added Pin To Net: NetName=LED_B Pin=R65-1
+Added Pin To Net: NetName=LED_B Pin=U1-3
+Added Net: Name=LED_B
+Added Pin To Net: NetName=LED_GK Pin=Q3-4
+Added Pin To Net: NetName=LED_GK Pin=R2-2
+Added Pin To Net: NetName=LED_GK Pin=R5-2
+Added Pin To Net: NetName=LED_GK Pin=R8-2
+Added Pin To Net: NetName=LED_GK Pin=R11-2
+Added Pin To Net: NetName=LED_GK Pin=R14-2
+Added Pin To Net: NetName=LED_GK Pin=R17-2
+Added Pin To Net: NetName=LED_GK Pin=R20-2
+Added Pin To Net: NetName=LED_GK Pin=R23-2
+Added Pin To Net: NetName=LED_GK Pin=R26-2
+Added Pin To Net: NetName=LED_GK Pin=R29-2
+Added Pin To Net: NetName=LED_GK Pin=R32-2
+Added Pin To Net: NetName=LED_GK Pin=R35-2
+Added Pin To Net: NetName=LED_GK Pin=R38-2
+Added Pin To Net: NetName=LED_GK Pin=R41-2
+Added Pin To Net: NetName=LED_GK Pin=R44-2
+Added Pin To Net: NetName=LED_GK Pin=R47-2
+Added Pin To Net: NetName=LED_GK Pin=R50-2
+Added Pin To Net: NetName=LED_GK Pin=R53-2
+Added Pin To Net: NetName=LED_GK Pin=R56-2
+Added Pin To Net: NetName=LED_GK Pin=R59-2
+Added Pin To Net: NetName=LED_GK Pin=R62-2
+Added Net: Name=LED_GK
+Added Pin To Net: NetName=LED_G Pin=R67-1
+Added Pin To Net: NetName=LED_G Pin=U1-5
+Added Net: Name=LED_G
+Added Pin To Net: NetName=LED_RK Pin=Q1-4
+Added Pin To Net: NetName=LED_RK Pin=R1-2
+Added Pin To Net: NetName=LED_RK Pin=R4-2
+Added Pin To Net: NetName=LED_RK Pin=R7-2
+Added Pin To Net: NetName=LED_RK Pin=R10-2
+Added Pin To Net: NetName=LED_RK Pin=R13-2
+Added Pin To Net: NetName=LED_RK Pin=R16-2
+Added Pin To Net: NetName=LED_RK Pin=R19-2
+Added Pin To Net: NetName=LED_RK Pin=R22-2
+Added Pin To Net: NetName=LED_RK Pin=R25-2
+Added Pin To Net: NetName=LED_RK Pin=R28-2
+Added Pin To Net: NetName=LED_RK Pin=R31-2
+Added Pin To Net: NetName=LED_RK Pin=R34-2
+Added Pin To Net: NetName=LED_RK Pin=R37-2
+Added Pin To Net: NetName=LED_RK Pin=R40-2
+Added Pin To Net: NetName=LED_RK Pin=R43-2
+Added Pin To Net: NetName=LED_RK Pin=R46-2
+Added Pin To Net: NetName=LED_RK Pin=R49-2
+Added Pin To Net: NetName=LED_RK Pin=R52-2
+Added Pin To Net: NetName=LED_RK Pin=R55-2
+Added Pin To Net: NetName=LED_RK Pin=R58-2
+Added Pin To Net: NetName=LED_RK Pin=R61-2
+Added Net: Name=LED_RK
+Added Pin To Net: NetName=LED_R Pin=R64-1
+Added Pin To Net: NetName=LED_R Pin=U1-4
+Added Net: Name=LED_R
+Added Pin To Net: NetName=NetD1_2 Pin=D1-2
+Added Pin To Net: NetName=NetD1_2 Pin=R3-1
+Added Net: Name=NetD1_2
+Added Pin To Net: NetName=NetD1_4 Pin=D1-4
+Added Pin To Net: NetName=NetD1_4 Pin=R2-1
+Added Net: Name=NetD1_4
+Added Pin To Net: NetName=NetD1_6 Pin=D1-6
+Added Pin To Net: NetName=NetD1_6 Pin=R1-1
+Added Net: Name=NetD1_6
+Added Pin To Net: NetName=NetD2_1 Pin=D2-1
+Added Pin To Net: NetName=NetD2_1 Pin=R4-1
+Added Net: Name=NetD2_1
+Added Pin To Net: NetName=NetD2_3 Pin=D2-3
+Added Pin To Net: NetName=NetD2_3 Pin=R5-1
+Added Net: Name=NetD2_3
+Added Pin To Net: NetName=NetD2_5 Pin=D2-5
+Added Pin To Net: NetName=NetD2_5 Pin=R6-1
+Added Net: Name=NetD2_5
+Added Pin To Net: NetName=NetD3_2 Pin=D3-2
+Added Pin To Net: NetName=NetD3_2 Pin=R9-1
+Added Net: Name=NetD3_2
+Added Pin To Net: NetName=NetD3_4 Pin=D3-4
+Added Pin To Net: NetName=NetD3_4 Pin=R8-1
+Added Net: Name=NetD3_4
+Added Pin To Net: NetName=NetD3_6 Pin=D3-6
+Added Pin To Net: NetName=NetD3_6 Pin=R7-1
+Added Net: Name=NetD3_6
+Added Pin To Net: NetName=NetD4_1 Pin=D4-1
+Added Pin To Net: NetName=NetD4_1 Pin=R10-1
+Added Net: Name=NetD4_1
+Added Pin To Net: NetName=NetD4_3 Pin=D4-3
+Added Pin To Net: NetName=NetD4_3 Pin=R11-1
+Added Net: Name=NetD4_3
+Added Pin To Net: NetName=NetD4_5 Pin=D4-5
+Added Pin To Net: NetName=NetD4_5 Pin=R12-1
+Added Net: Name=NetD4_5
+Added Pin To Net: NetName=NetD5_2 Pin=D5-2
+Added Pin To Net: NetName=NetD5_2 Pin=R15-1
+Added Net: Name=NetD5_2
+Added Pin To Net: NetName=NetD5_4 Pin=D5-4
+Added Pin To Net: NetName=NetD5_4 Pin=R14-1
+Added Net: Name=NetD5_4
+Added Pin To Net: NetName=NetD5_6 Pin=D5-6
+Added Pin To Net: NetName=NetD5_6 Pin=R13-1
+Added Net: Name=NetD5_6
+Added Pin To Net: NetName=NetD6_1 Pin=D6-1
+Added Pin To Net: NetName=NetD6_1 Pin=R16-1
+Added Net: Name=NetD6_1
+Added Pin To Net: NetName=NetD6_3 Pin=D6-3
+Added Pin To Net: NetName=NetD6_3 Pin=R17-1
+Added Net: Name=NetD6_3
+Added Pin To Net: NetName=NetD6_5 Pin=D6-5
+Added Pin To Net: NetName=NetD6_5 Pin=R18-1
+Added Net: Name=NetD6_5
+Added Pin To Net: NetName=NetD7_2 Pin=D7-2
+Added Pin To Net: NetName=NetD7_2 Pin=R21-1
+Added Net: Name=NetD7_2
+Added Pin To Net: NetName=NetD7_4 Pin=D7-4
+Added Pin To Net: NetName=NetD7_4 Pin=R20-1
+Added Net: Name=NetD7_4
+Added Pin To Net: NetName=NetD7_6 Pin=D7-6
+Added Pin To Net: NetName=NetD7_6 Pin=R19-1
+Added Net: Name=NetD7_6
+Added Pin To Net: NetName=NetD8_2 Pin=D8-2
+Added Pin To Net: NetName=NetD8_2 Pin=R24-1
+Added Net: Name=NetD8_2
+Added Pin To Net: NetName=NetD8_4 Pin=D8-4
+Added Pin To Net: NetName=NetD8_4 Pin=R23-1
+Added Net: Name=NetD8_4
+Added Pin To Net: NetName=NetD8_6 Pin=D8-6
+Added Pin To Net: NetName=NetD8_6 Pin=R22-1
+Added Net: Name=NetD8_6
+Added Pin To Net: NetName=NetD9_1 Pin=D9-1
+Added Pin To Net: NetName=NetD9_1 Pin=R25-1
+Added Net: Name=NetD9_1
+Added Pin To Net: NetName=NetD9_3 Pin=D9-3
+Added Pin To Net: NetName=NetD9_3 Pin=R26-1
+Added Net: Name=NetD9_3
+Added Pin To Net: NetName=NetD9_5 Pin=D9-5
+Added Pin To Net: NetName=NetD9_5 Pin=R27-1
+Added Net: Name=NetD9_5
+Added Pin To Net: NetName=NetD10_2 Pin=D10-2
+Added Pin To Net: NetName=NetD10_2 Pin=R30-1
+Added Net: Name=NetD10_2
+Added Pin To Net: NetName=NetD10_4 Pin=D10-4
+Added Pin To Net: NetName=NetD10_4 Pin=R29-1
+Added Net: Name=NetD10_4
+Added Pin To Net: NetName=NetD10_6 Pin=D10-6
+Added Pin To Net: NetName=NetD10_6 Pin=R28-1
+Added Net: Name=NetD10_6
+Added Pin To Net: NetName=NetD11_1 Pin=D11-1
+Added Pin To Net: NetName=NetD11_1 Pin=R31-1
+Added Net: Name=NetD11_1
+Added Pin To Net: NetName=NetD11_3 Pin=D11-3
+Added Pin To Net: NetName=NetD11_3 Pin=R32-1
+Added Net: Name=NetD11_3
+Added Pin To Net: NetName=NetD11_5 Pin=D11-5
+Added Pin To Net: NetName=NetD11_5 Pin=R33-1
+Added Net: Name=NetD11_5
+Added Pin To Net: NetName=NetD12_2 Pin=D12-2
+Added Pin To Net: NetName=NetD12_2 Pin=R36-1
+Added Net: Name=NetD12_2
+Added Pin To Net: NetName=NetD12_4 Pin=D12-4
+Added Pin To Net: NetName=NetD12_4 Pin=R35-1
+Added Net: Name=NetD12_4
+Added Pin To Net: NetName=NetD12_6 Pin=D12-6
+Added Pin To Net: NetName=NetD12_6 Pin=R34-1
+Added Net: Name=NetD12_6
+Added Pin To Net: NetName=NetD13_1 Pin=D13-1
+Added Pin To Net: NetName=NetD13_1 Pin=R37-1
+Added Net: Name=NetD13_1
+Added Pin To Net: NetName=NetD13_3 Pin=D13-3
+Added Pin To Net: NetName=NetD13_3 Pin=R38-1
+Added Net: Name=NetD13_3
+Added Pin To Net: NetName=NetD13_5 Pin=D13-5
+Added Pin To Net: NetName=NetD13_5 Pin=R39-1
+Added Net: Name=NetD13_5
+Added Pin To Net: NetName=NetD14_2 Pin=D14-2
+Added Pin To Net: NetName=NetD14_2 Pin=R42-1
+Added Net: Name=NetD14_2
+Added Pin To Net: NetName=NetD14_4 Pin=D14-4
+Added Pin To Net: NetName=NetD14_4 Pin=R41-1
+Added Net: Name=NetD14_4
+Added Pin To Net: NetName=NetD14_6 Pin=D14-6
+Added Pin To Net: NetName=NetD14_6 Pin=R40-1
+Added Net: Name=NetD14_6
+Added Pin To Net: NetName=NetD15_1 Pin=D15-1
+Added Pin To Net: NetName=NetD15_1 Pin=R43-1
+Added Net: Name=NetD15_1
+Added Pin To Net: NetName=NetD15_3 Pin=D15-3
+Added Pin To Net: NetName=NetD15_3 Pin=R44-1
+Added Net: Name=NetD15_3
+Added Pin To Net: NetName=NetD15_5 Pin=D15-5
+Added Pin To Net: NetName=NetD15_5 Pin=R45-1
+Added Net: Name=NetD15_5
+Added Pin To Net: NetName=NetD16_2 Pin=D16-2
+Added Pin To Net: NetName=NetD16_2 Pin=R48-1
+Added Net: Name=NetD16_2
+Added Pin To Net: NetName=NetD16_4 Pin=D16-4
+Added Pin To Net: NetName=NetD16_4 Pin=R47-1
+Added Net: Name=NetD16_4
+Added Pin To Net: NetName=NetD16_6 Pin=D16-6
+Added Pin To Net: NetName=NetD16_6 Pin=R46-1
+Added Net: Name=NetD16_6
+Added Pin To Net: NetName=NetD17_2 Pin=D17-2
+Added Pin To Net: NetName=NetD17_2 Pin=R51-1
+Added Net: Name=NetD17_2
+Added Pin To Net: NetName=NetD17_4 Pin=D17-4
+Added Pin To Net: NetName=NetD17_4 Pin=R50-1
+Added Net: Name=NetD17_4
+Added Pin To Net: NetName=NetD17_6 Pin=D17-6
+Added Pin To Net: NetName=NetD17_6 Pin=R49-1
+Added Net: Name=NetD17_6
+Added Pin To Net: NetName=NetD18_1 Pin=D18-1
+Added Pin To Net: NetName=NetD18_1 Pin=R52-1
+Added Net: Name=NetD18_1
+Added Pin To Net: NetName=NetD18_3 Pin=D18-3
+Added Pin To Net: NetName=NetD18_3 Pin=R53-1
+Added Net: Name=NetD18_3
+Added Pin To Net: NetName=NetD18_5 Pin=D18-5
+Added Pin To Net: NetName=NetD18_5 Pin=R54-1
+Added Net: Name=NetD18_5
+Added Pin To Net: NetName=NetD19_2 Pin=D19-2
+Added Pin To Net: NetName=NetD19_2 Pin=R57-1
+Added Net: Name=NetD19_2
+Added Pin To Net: NetName=NetD19_4 Pin=D19-4
+Added Pin To Net: NetName=NetD19_4 Pin=R56-1
+Added Net: Name=NetD19_4
+Added Pin To Net: NetName=NetD19_6 Pin=D19-6
+Added Pin To Net: NetName=NetD19_6 Pin=R55-1
+Added Net: Name=NetD19_6
+Added Pin To Net: NetName=NetD20_1 Pin=D20-1
+Added Pin To Net: NetName=NetD20_1 Pin=R58-1
+Added Net: Name=NetD20_1
+Added Pin To Net: NetName=NetD20_3 Pin=D20-3
+Added Pin To Net: NetName=NetD20_3 Pin=R59-1
+Added Net: Name=NetD20_3
+Added Pin To Net: NetName=NetD20_5 Pin=D20-5
+Added Pin To Net: NetName=NetD20_5 Pin=R60-1
+Added Net: Name=NetD20_5
+Added Pin To Net: NetName=NetD21_2 Pin=D21-2
+Added Pin To Net: NetName=NetD21_2 Pin=R63-1
+Added Net: Name=NetD21_2
+Added Pin To Net: NetName=NetD21_4 Pin=D21-4
+Added Pin To Net: NetName=NetD21_4 Pin=R62-1
+Added Net: Name=NetD21_4
+Added Pin To Net: NetName=NetD21_6 Pin=D21-6
+Added Pin To Net: NetName=NetD21_6 Pin=R61-1
+Added Net: Name=NetD21_6
+Added Pin To Net: NetName=NetL1_1 Pin=L1-1
+Added Pin To Net: NetName=NetL1_1 Pin=U2-5
+Added Net: Name=NetL1_1
+Added Pin To Net: NetName=NetQ1_1 Pin=Q1-1
+Added Pin To Net: NetName=NetQ1_1 Pin=R64-2
+Added Net: Name=NetQ1_1
+Added Pin To Net: NetName=NetQ2_1 Pin=Q2-1
+Added Pin To Net: NetName=NetQ2_1 Pin=R65-2
+Added Net: Name=NetQ2_1
+Added Pin To Net: NetName=NetQ3_1 Pin=Q3-1
+Added Pin To Net: NetName=NetQ3_1 Pin=R67-2
+Added Net: Name=NetQ3_1
+Added Pin To Net: NetName=NetR66_1 Pin=R66-1
+Added Pin To Net: NetName=NetR66_1 Pin=SW1-1
+Added Pin To Net: NetName=NetR66_1 Pin=SW1-2
+Added Pin To Net: NetName=NetR66_1 Pin=U1-8
+Added Net: Name=NetR66_1
+Added Pin To Net: NetName=RST Pin=J2-3
+Added Pin To Net: NetName=RST Pin=U1-15
+Added Net: Name=RST
+Added Pin To Net: NetName=RX Pin=J2-2
+Added Pin To Net: NetName=RX Pin=U1-11
+Added Net: Name=RX
+Added Pin To Net: NetName=TX Pin=J2-1
+Added Pin To Net: NetName=TX Pin=U1-12
+Added Net: Name=TX
+Added Pin To Net: NetName=VLED Pin=D1-1
+Added Pin To Net: NetName=VLED Pin=D1-3
+Added Pin To Net: NetName=VLED Pin=D1-5
+Added Pin To Net: NetName=VLED Pin=D2-2
+Added Pin To Net: NetName=VLED Pin=D2-4
+Added Pin To Net: NetName=VLED Pin=D2-6
+Added Pin To Net: NetName=VLED Pin=D3-1
+Added Pin To Net: NetName=VLED Pin=D3-3
+Added Pin To Net: NetName=VLED Pin=D3-5
+Added Pin To Net: NetName=VLED Pin=D4-2
+Added Pin To Net: NetName=VLED Pin=D4-4
+Added Pin To Net: NetName=VLED Pin=D4-6
+Added Pin To Net: NetName=VLED Pin=D5-1
+Added Pin To Net: NetName=VLED Pin=D5-3
+Added Pin To Net: NetName=VLED Pin=D5-5
+Added Pin To Net: NetName=VLED Pin=D6-2
+Added Pin To Net: NetName=VLED Pin=D6-4
+Added Pin To Net: NetName=VLED Pin=D6-6
+Added Pin To Net: NetName=VLED Pin=D7-1
+Added Pin To Net: NetName=VLED Pin=D7-3
+Added Pin To Net: NetName=VLED Pin=D7-5
+Added Pin To Net: NetName=VLED Pin=D8-1
+Added Pin To Net: NetName=VLED Pin=D8-3
+Added Pin To Net: NetName=VLED Pin=D8-5
+Added Pin To Net: NetName=VLED Pin=D9-2
+Added Pin To Net: NetName=VLED Pin=D9-4
+Added Pin To Net: NetName=VLED Pin=D9-6
+Added Pin To Net: NetName=VLED Pin=D10-1
+Added Pin To Net: NetName=VLED Pin=D10-3
+Added Pin To Net: NetName=VLED Pin=D10-5
+Added Pin To Net: NetName=VLED Pin=D11-2
+Added Pin To Net: NetName=VLED Pin=D11-4
+Added Pin To Net: NetName=VLED Pin=D11-6
+Added Pin To Net: NetName=VLED Pin=D12-1
+Added Pin To Net: NetName=VLED Pin=D12-3
+Added Pin To Net: NetName=VLED Pin=D12-5
+Added Pin To Net: NetName=VLED Pin=D13-2
+Added Pin To Net: NetName=VLED Pin=D13-4
+Added Pin To Net: NetName=VLED Pin=D13-6
+Added Pin To Net: NetName=VLED Pin=D14-1
+Added Pin To Net: NetName=VLED Pin=D14-3
+Added Pin To Net: NetName=VLED Pin=D14-5
+Added Pin To Net: NetName=VLED Pin=D15-2
+Added Pin To Net: NetName=VLED Pin=D15-4
+Added Pin To Net: NetName=VLED Pin=D15-6
+Added Pin To Net: NetName=VLED Pin=D16-1
+Added Pin To Net: NetName=VLED Pin=D16-3
+Added Pin To Net: NetName=VLED Pin=D16-5
+Added Pin To Net: NetName=VLED Pin=D17-1
+Added Pin To Net: NetName=VLED Pin=D17-3
+Added Pin To Net: NetName=VLED Pin=D17-5
+Added Pin To Net: NetName=VLED Pin=D18-2
+Added Pin To Net: NetName=VLED Pin=D18-4
+Added Pin To Net: NetName=VLED Pin=D18-6
+Added Pin To Net: NetName=VLED Pin=D19-1
+Added Pin To Net: NetName=VLED Pin=D19-3
+Added Pin To Net: NetName=VLED Pin=D19-5
+Added Pin To Net: NetName=VLED Pin=D20-2
+Added Pin To Net: NetName=VLED Pin=D20-4
+Added Pin To Net: NetName=VLED Pin=D20-6
+Added Pin To Net: NetName=VLED Pin=D21-1
+Added Pin To Net: NetName=VLED Pin=D21-3
+Added Pin To Net: NetName=VLED Pin=D21-5
+Added Net: Name=VLED
+Added Member To Class: ClassName=Sheet1 Member=Component C1 4.7uF
+Added Member To Class: ClassName=Sheet1 Member=Component C2 10uF
+Added Member To Class: ClassName=Sheet1 Member=Component D1 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D2 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D3 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D4 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D5 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D6 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D7 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D9 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D10 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D11 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D12 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D13 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D14 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D15 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D16 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D17 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D18 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D19 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D20 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component D21 MHP5050RGBDT
+Added Member To Class: ClassName=Sheet1 Member=Component J1 USB
+Added Member To Class: ClassName=Sheet1 Member=Component J2 Term,Header,4 Pin,Top,2.54mm
+Added Member To Class: ClassName=Sheet1 Member=Component J3 Plated M3 hole
+Added Member To Class: ClassName=Sheet1 Member=Component J5 Plated M3 hole
+Added Member To Class: ClassName=Sheet1 Member=Component J6 Term,Header,3 Pin,Top,2.54mm
+Added Member To Class: ClassName=Sheet1 Member=Component L1 10uH
+Added Member To Class: ClassName=Sheet1 Member=Component Q1 NTD5865NLT4G
+Added Member To Class: ClassName=Sheet1 Member=Component Q2 NTD5865NLT4G
+Added Member To Class: ClassName=Sheet1 Member=Component Q3 NTD5865NLT4G
+Added Member To Class: ClassName=Sheet1 Member=Component R1 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R2 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R3 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R4 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R5 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R6 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R7 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R8 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R9 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R10 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R11 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R12 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R13 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R14 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R15 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R16 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R17 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R18 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R19 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R20 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R21 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R22 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R23 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R24 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R25 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R26 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R27 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R28 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R29 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R30 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R31 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R32 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R33 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R34 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R35 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R36 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R37 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R38 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R39 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R40 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R41 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R42 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R43 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R44 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R45 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R46 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R47 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R48 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R49 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R50 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R51 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R52 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R53 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R54 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R55 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R56 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R57 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R58 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R59 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R60 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R61 150R
+Added Member To Class: ClassName=Sheet1 Member=Component R62 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R63 110R
+Added Member To Class: ClassName=Sheet1 Member=Component R64 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R65 1k
+Added Member To Class: ClassName=Sheet1 Member=Component R66 10k
+Added Member To Class: ClassName=Sheet1 Member=Component R67 1k
+Added Member To Class: ClassName=Sheet1 Member=Component SW1 Switch
+Added Member To Class: ClassName=Sheet1 Member=Component U1 ESP32-WROOM-2U
+Added Member To Class: ClassName=Sheet1 Member=Component U2 TPS62203DBVR
+Added Room: Name=Sheet1

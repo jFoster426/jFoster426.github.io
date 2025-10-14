@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=NetU3_1 Pin=U4-1
+Removed Pin From Net: NetName=NetU3_2 Pin=U4-3
+Added Pin To Net: NetName=NetU3_2 Pin=U4-1
+Added Pin To Net: NetName=NetU3_1 Pin=U4-3
+Added Room: Name=KeyFob

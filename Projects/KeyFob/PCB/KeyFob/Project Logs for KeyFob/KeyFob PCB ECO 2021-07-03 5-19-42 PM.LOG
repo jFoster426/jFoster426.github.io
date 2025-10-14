@@ -1,0 +1,5 @@
+Removed Pin From Net: NetName=SDI Pin=J?-2
+Removed Pin From Net: NetName=SCK Pin=J?-3
+Added Pin To Net: NetName=SCK Pin=J?-2
+Added Pin To Net: NetName=SDI Pin=J?-3
+Added Room: Name=KeyFob

@@ -1,0 +1,19 @@
+Added Component: Designator=R12(Res,Trim,15T,Side-Adj,Thru)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Ansley Ang"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.bourns.com/docs/Product-Datasheets/3006.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "3006P-7-202LF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "3006P-7-202LF-ND"; VariantName = "[No Variations]"
+Added Component: Designator=R?(Res,Trim,5T,Top-Adj,SMD)
+Add component (AddParameter): Name = "CreatedBy"; Value = "Judd Foster"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "HelpURL"; Value = "https://www.bourns.com/docs/Product-Datasheets/3214.pdf"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer"; Value = "Bourns Inc."; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Manufacturer Part Number"; Value = "3214W-202ECT-ND"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor"; Value = "Digikey"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Vendor Part Number"; Value = "3214W-1-202E"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=VEE Pin=R12-1
+Added Pin To Net: NetName=NetC5_2 Pin=R12-2
+Added Pin To Net: NetName=VCC Pin=R12-3
+Added Member To Class: ClassName=DiffProbe Member=Component R12 2k
+Added Member To Class: ClassName=DiffProbe Member=Component R? 2k

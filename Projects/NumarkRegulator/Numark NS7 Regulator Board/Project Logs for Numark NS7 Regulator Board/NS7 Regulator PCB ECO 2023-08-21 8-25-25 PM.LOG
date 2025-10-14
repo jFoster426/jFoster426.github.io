@@ -1,0 +1,17 @@
+Removed Pin From Net: NetName=PS.COM Pin=J5-1
+Removed Pin From Net: NetName=PS.+5V Pin=J5-2
+Removed Pin From Net: NetName=PS.+5V Pin=J5-3
+Removed Pin From Net: NetName=PS.-18V Pin=J5-4
+Removed Pin From Net: NetName=PS.COM Pin=J5-5
+Removed Pin From Net: NetName=PS.+18V Pin=J5-6
+Removed Pin From Net: NetName=PS.COM Pin=J5-7
+Removed Pin From Net: NetName=PS.+28V Pin=J5-8
+Added Pin To Net: NetName=PS.+28V Pin=J5-1
+Added Pin To Net: NetName=PS.COM Pin=J5-2
+Added Pin To Net: NetName=PS.+18V Pin=J5-3
+Added Pin To Net: NetName=PS.COM Pin=J5-4
+Added Pin To Net: NetName=PS.-18V Pin=J5-5
+Added Pin To Net: NetName=PS.+5V Pin=J5-6
+Added Pin To Net: NetName=PS.+5V Pin=J5-7
+Added Pin To Net: NetName=PS.COM Pin=J5-8
+Change Class Name : Old Net Name=Sheet1 New Net Name=NS7 Regulator

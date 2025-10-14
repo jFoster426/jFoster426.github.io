@@ -1,0 +1,35 @@
+Replace Part ANT? Ant,433MHz,Chip,SMD in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Ant,433MHz,Chip,SMD from Schlib1.SchLib
+Replace Part B? Holder,Cell,CR2032,PCB,SMD in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Holder,Cell,CR2032,PCB,SMD from Schlib1.SchLib
+Replace Part C? CAP,Cer,470pF,100VDC,X7R,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,470pF,100VDC,X7R,0603 from symbols.SchLib
+Replace Part C? CAP,Cer,4.7nF,50VDC,X7R,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,4.7nF,50VDC,X7R,0603 from symbols.SchLib
+Replace Part C? CAP,Cer,5.6pF,50VDC,C0G/NP0,0402 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,5.6pF,50VDC,C0G/NP0,0402 from symbols.SchLib
+Replace Part C? CAP,Cer,6.8pF,50VDC,C0G/NP0,0402 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,6.8pF,50VDC,C0G/NP0,0402 from symbols.SchLib
+Replace Part C? CAP,Cer,8.2pF,50VDC,C0G/NP0,0402_1 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,8.2pF,50VDC,C0G/NP0,0402_1 from symbols.SchLib
+Replace Part C? CAP,Cer,8.2pF,50VDC,C0G/NP0,0402_1 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,8.2pF,50VDC,C0G/NP0,0402_1 from symbols.SchLib
+Replace Part C? CAP,Cer,100nF,25VDC,Y5V,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,100nF,25VDC,Y5V,0603 from symbols.SchLib
+Replace Part C? CAP,Cer,10uF,10VDC,X5R,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,10uF,10VDC,X5R,0805 from symbols.SchLib
+Replace Part C? CAP,Cer,10uF,10VDC,X5R,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,10uF,10VDC,X5R,0805 from symbols.SchLib
+Replace Part C? CAP,Cer,10uF,10VDC,X5R,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,10uF,10VDC,X5R,0805 from symbols.SchLib
+Replace Part C? CAP,Cer,10uF,10VDC,X5R,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with CAP,Cer,10uF,10VDC,X5R,0805 from symbols.SchLib
+Replace Part J? Conn,USB.Micro_B,SMD in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Conn,USB.Micro_B,SMD from symbols.SchLib
+Replace Part L? IND,330nH,300mA,Multilayer,0402 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with IND,330nH,300mA,Multilayer,0402 from Schlib1.SchLib
+Replace Part L? IND,22nH,800mA,Wirewound,0402 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with IND,22nH,800mA,Wirewound,0402 from Schlib1.SchLib
+Replace Part L? IND,18nH,370mA,Wirewound,0402 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with IND,18nH,370mA,Wirewound,0402 from Schlib1.SchLib
+Replace Part L? IND,4.7uH,80mA,Multilayer,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with IND,4.7uH,80mA,Multilayer,0805 from symbols.SchLib
+Replace Part L? IND,4.7uH,80mA,Multilayer,0805 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with IND,4.7uH,80mA,Multilayer,0805 from symbols.SchLib
+Replace Part Q? MOSFET,P Ch,20V,2A in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with MOSFET,P Ch,20V,2A from symbols.SchLib
+Replace Part Q? MOSFET,P Ch,20V,2A in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with MOSFET,P Ch,20V,2A from symbols.SchLib
+Replace Part Q? Trans,NPN,40V,200mA,SMD in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Trans,NPN,40V,200mA,SMD from symbols.SchLib
+Replace Part R? RES,976k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,976k,1%,0.1W,0603 from symbols.SchLib
+Replace Part R? RES,562k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,562k,1%,0.1W,0603 from symbols.SchLib
+Replace Part R? RES,10k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,10k,1%,0.1W,0603 from symbols.SchLib
+Replace Part R? RES,10k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,10k,1%,0.1W,0603 from symbols.SchLib
+Replace Part R? RES,10k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,10k,1%,0.1W,0603 from symbols.SchLib
+Replace Part R? RES,10k,1%,0.1W,0603 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with RES,10k,1%,0.1W,0603 from symbols.SchLib
+Replace Part SW? Switch,Tactile,SPST-NO,SMD,H5.0 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Switch,Tactile,SPST-NO,SMD,H5.0 from symbols.SchLib
+Replace Part SW? Switch,Tactile,SPST-NO,SMD,H5.0 in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with Switch,Tactile,SPST-NO,SMD,H5.0 from symbols.SchLib
+Replace Part U? MICRF114T-I/OT in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with MICRF114T-I/OT from Schlib1.SchLib
+Replace Part U? ATTINY5-TSHR in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with ATTINY5-TSHR from Schlib1.SchLib
+Replace Part U? MCP1640CT-I/MC in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with MCP1640CT-I/MC from Schlib1.SchLib
+Replace Part U? TPS62203DBVR in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with TPS62203DBVR from symbols.SchLib
+Replace Part Y? XTAL,13.56MHz,18pF,SMD in C:\Users\juddf\Desktop\Alyssa Key Fob\PCB\KeyFob\Sheet1.SchDoc with XTAL,13.56MHz,18pF,SMD from Schlib1.SchLib
