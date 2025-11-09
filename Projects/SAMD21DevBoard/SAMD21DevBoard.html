@@ -2,7 +2,9 @@
 <h1>Introduction</h1>
 <br>
 <pre class="text">
-TODO
+A simple dev board for the ATSAMD21G18A that I made when part of the SFU Robot Soccer club. The team needed an SWD programmer/debugger for the main ATSAME70Q21B microcontroller used on the motherboard, as well as serial communications between the motherboard and the computer to be able to easily read out data from registers. Normally, you could use an ST-Link with OpenOCD and a separate FTDI adapter for the USB-serial connection, but that would require two USB ports. Eventually, I wanted to integrate both systems directly on the motherboard, and using two USB interfaces would become complicated since a USB hub IC would need to be added to the motherboard, along with each separate interface. Instead, I thought I would try to solve this issue in firmware by using the open-source code available from Alex Taradov (Free-DAP), and modify it to include a USB-serial interface.
+
+Thus spawned this development board with the bare minimum required to run the SAMD21. All I/O are broken out to pin headers so I could use Dupont style jumper wires to connect the board to another USB-serial converter. There are two 20-pin SWD style programming headers. One header is for programming the SAMD21 on this board, the other is for programming the SAME70 on the motherboard. I duplicated the pinout so that it would be easy to simply plug in an adapter cable that was already created to connect between the ST-Link and the SAME70 on the motherboard.
 </pre>
 <br>
 <br>
@@ -32,9 +34,29 @@ TODO
 <h1>Firmware</h1>
 <br>
 <pre class="text">
-Based on the work: https://github.com/ataradov/free-dap
+Based on the work of: <a class="url-pre" href="https://github.com/ataradov/free-dap">Alex Taradov: Free-DAP</a>.
+
+SWD pin configurations are determined from the following section in the code:
 </pre>
+<div style="background-color: black; width: 100%; height: 175px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-c" style="white-space: overflow;">
+        Projects/SAMD21DevBoard/swd_config.h
+    </code></pre>
+</div>
+<pre class="text">
+USART pin configurations are determined from the following section in the code:
+</pre>
+<div style="background-color: black; width: 100%; height: 225px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-c" style="white-space: overflow;">
+        Projects/SAMD21DevBoard/usart_config.h
+    </code></pre>
+</div>
 <br>
+<pre class="text">
+When the board is plugged into the computer, it will show up in Device Manager as two devices:
+<ol><li>USB to Serial COM port, operating at 115200,N,8,1. It is possible to dynamically change the baud rate using the PC, but I hard-coded it for now.</li>
+    <li>HID Class Device. This is the OpenOCD SWD programmer/debugger and is recognized by OpenOCD if you create the proper configuration file with the correct USB VID/PID corresponding to this device. The Free-DAP documentation explains how to do this.</li></ol>
+</pre>
 <br>
 <h1>Additional Files</h1>
 <br>
@@ -51,4 +73,4 @@ The Altium PCB project and Gerber files can be downloaded from the link below.
 <a class="url-pre" style="margin-left: 0px;" href="Projects/SAMD21DevBoard/SAMD21DevBoardFW.zip">Firmware Source & Pre-Built Binaries</a>
 <br>
 <br>
-<pre class="text" style="text-align: center"><i>Last Updated: 28 Jun 2025</i></pre>
+<pre class="text" style="text-align: center"><i>Last Updated: 08 Nov 2025</i></pre>
