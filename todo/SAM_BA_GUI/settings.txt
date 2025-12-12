@@ -1,0 +1,5 @@
+# flash the SAM MCU over USB, %file% tells the application to insert a bin file here
+"%path%\sam-ba_3.2.1\sam-ba.exe" -p usb -d SAME70 -a internalflash -c write:"%bin%"
+
+# configure the SAM MCU to boot to the user code instead of this bootloader next time it starts
+# "%path%\sam-ba_3.2.1\sam-ba.exe" -p usb -d SAME70 -a bootconfig -c writecfg:bootmode:flash
