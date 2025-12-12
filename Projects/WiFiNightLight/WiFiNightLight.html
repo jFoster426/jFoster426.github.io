@@ -1,0 +1,78 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This was a quick project in collaboration with my girlfriend (now wife) to give to my parents as a holiday present. I wanted a light that could be controlled via a web app on a smartphone or tablet, with the ability to change colors or schedule a time of day when the night light would turn on and off.
+</pre>
+<br>
+<br>
+<h1>Schematic</h1>
+<br>
+<pre class="text">
+The schematic is very simple, a 3.3V linear regulator powering an ESP32 that can control the RGB value of the light using PWM dimming. All the LEDs are wired in parallel through three MOSFETs, one for each color. An optional photocell can be connected via a 3-pin header, to allow the light to sense when the room lighting was turned off, so it can turn on automatically. This feature was not implemented.
+
+The board is powered from a micro-USB connector, and programmed via a 4-pin header on the board using a USB-serial converter.
+</pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/schematic.jpg" onclick="window.open('Projects/WiFiNightLight/schematic.jpg')">
+<pre class="text" style="text-align: center;"><i>Schematic design of the night light</i></pre>
+<br>
+<br>
+<h1>PCB</h1>
+<br>
+<pre class="text">
+Alyssa drew the artwork for the bottom of the PCB on a piece of paper which I scanned and imported into Altium as a union on the silkscreen layer. I wanted to experiment with silkscreen art on PCBs and thought this would be a great projct to try it out. Multi-color PCBs were not available at the time but they are at the time of writing this post, so it would be interesting to try that and see how it turns out.
+
+I chose white for the PCB color to try and get as much light reflected off of the PCB as possible.
+</pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/pcb-top.png" onclick="window.open('Projects/WiFiNightLight/pcb-top.png')">
+<pre class="text" style="text-align: center;"><i>3D render of PCB (top side)</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/pcb-bottom.png" onclick="window.open('Projects/WiFiNightLight/pcb-bottom.png')">
+<pre class="text" style="text-align: center;"><i>3D render of PCB (bottom side) with illustration</i></pre>
+<br>
+<br>
+<h1>Mechanical Assembly</h1>
+<br>
+<pre class="text">
+I created a simple base in Solidworks and a bracket that holds the top cover on the light. The antenna is taped to the bracket, and not visible with the top cover on the light. The top cover is made from a frosted glass candle we bought from Winners and washed the wax out of it.
+</pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/sw-assy.png" onclick="window.open('Projects/WiFiNightLight/sw-assy.png')">
+<pre class="text" style="text-align: center;"><i>Completed night light assembly (minus the top cover) in Solidworks</i></pre>
+<br>
+<h1>Photos</h1>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/completed.jpg" onclick="window.open('Projects/WiFiNightLight/completed.jpg')">
+<pre class="text" style="text-align: center;"><i>Completed night light in operation</i></pre>
+<br>
+<br>
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/WiFiNightLight/software-combined.png" onclick="window.open('Projects/WiFiNightLight/software-combined.png')">
+<pre class="text" style="text-align: center;"><i>Web app (four separate screens)</i></pre>
+<br>
+<br>
+<h1>Additional Files</h1>
+<br>
+<pre class="text">
+The Altium PCB project and Gerber files can be downloaded from the link below.
+</pre>
+<br>
+<a class="url-pre" href="Projects/">Altium Project & Gerber Files</a>
+<br>
+<br>
+<pre class="text">The Solidworks and STL files can be downloaded from the link below.</pre>
+<br>
+<a class="url-pre" href="Projects/">Solidworks and STL files</a>
+<br>
+<br>
+<pre class="text">The source code can be downloaded from the link below.</pre>
+<br>
+<a class="url-pre" href="Projects/">Source Code for ESP32</a>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 10 Nov 2025</i></pre>

@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<p class="text" style="padding-top: 0px">
+DIY reflow oven powered by ESP32 and controlled via a web interface. Reflow profile is customizable through the browser and relevant information about oven temperature and status is displayed on an OLED display on the front of the oven.
+</p>
+<br>
+<br>
+<h1>Power Board (Initial Idea)</h1>
+<p class="text">
+The power board consists of two triacs to control the heating of each element (top/bottom). I ran into some issues when designing the Speaker Auto Power project because the gate resistor was too large which was causing unintentional phase control of the speakers once their internal capacitor bank had finished charging.
+
+In that project, I simply reduced the value of the gate resistor until it worked reliably, but in this project I wanted to better understand the limits for what drives the minimum/maximum value of gate resistor.
+
+The relevant parts of the triac circuit are shown below:
+</p>
+<img style="width: 80%;" class="center-img" src="Projects/ReflowOven/BasicTriacCircuit.png">
+<p class="text">
+The triac requires a minimum gate current \(I_{GT}\) in order to trigger. \(I_{GT(min)}\) and \(I_{GT(max)}\) are both usually specified in the triac datasheet, where the triac will not trigger below \(I_{GT(min)}\) and must trigger before \(I_{GT(max)}\). The AC line voltage at which the triac may trigger should be minimized to keep the triac triggering as close to the AC zero-crossing as possible:
+</p>
+<img style="width: 80%;" class="center-img" src="Projects/ReflowOven/IGTEquivalentCircuit.png">
+<p class="text">$$ V_S=I_{GT}(R_G+R_L+R_{D2})+V_{T2}+V_{GT} $$</p>
+<br>
+<p class="text">
+Once the triac triggers, the current between MT1 and MT2 of the main triac should be above \(I_L\), otherwise the triac will go into oscillation since after the voltage across MT1-MT2 collapses, neither \(I_L\) or \(I_{GT}\) are satisfied so the triac shuts off. Once the voltage across MT1-MT2 rises enough for \(I_{GT}\) to be reached again, the triac re-triggers and this oscillation repeats until \(V_S\) becomes large enough to sustain \(I_L\):
+</p>
+<img style="width: 80%;" class="center-img" src="Projects/ReflowOven/ILEquivalentCircuit.png">
+<p class="text">$$ R_L\leq\frac{(V_S-V_{T1})}{I_L}-R_{D1} $$</p>
+<p class="text">
+Combine the two equations:
+</p>
+<p class="text">$$ R_L\leq\frac{(I_{GT}(R_G+R_L+R_{D2})+V_{T2}+V_{GT}-V_{T1})}{I_L}-R_{D1} $$</p>
+<p class="text">
+Solve for the minimum value of \(R_G\) given the expected value of (\R_L\):
+</p>
+<p class="text">$$ R_G\leq\frac{I_LR_L+I_LR_{D1}-(I_{GT}R_L+I_{GT}R_{D2}+V_{T2}+V_{GT}-V_{T1})}{I_{GT}} $$</p>
+<p class="text">And the associated value of \(V_S\) that the triac will activate at:</p>
+<p class="text">$$ V_S=I_{GT}(R_G+R_L+R_{D2})+V_{T2}+V_{GT} $$</p>
+<p class="text">Note: Use the minimum values for \(I_{GT}\) and \(V_{GT}\) to determine the minimum value for \(R_G\) because \(R_G\) must be larger in order to satisfy the main triac's latching current \(I_L\) if it triggers early.
+
+I wrote some code in GNU Octave to plot the results of the above equations. The minimum R_G value is determined from the parameters of the circuit, and the possible ranges for min and max \(V_S\) trip points are shown based on a particular value of \(R_G>R_{G(min)}\).
+</p>
+<br>
+<div style="background-color: black; width: 100%; height: 500px; overflow-x: auto; overflow-y: auto;">
+    <pre><code class="code language-matlab" style="white-space: pre-wrap;">
+        Projects/ReflowOven/calculate_R_G.m
+    </code></pre>
+</div>
+<br>
+<div style="display: flex">
+    <div style="flex: 50%; padding: 10px">
+        <img style="width: 100%;" class="center-img" src="Projects/ReflowOven/V_Sminmax.png">
+    </div>
+    <div style="flex: 50%; padding: 10px">
+        <img style="width: 100%;" class="center-img" src="Projects/ReflowOven/IncreasingR_L.png">
+    </div>
+</div>
+<p class="text">
+There is quite a spread between the minimum and maximum possible \(V_S\) values. Designing as conservatively as possible means that the resistor \(R_G\) should be chosen based on the minimum trip current \(I_{GT}\), but if this value is chosen and the triac actually behaves with trip current closer to the maximum value of \(I_{GT}\), then the load will only be switched on each half cycle at ~30 V in this scenario. Additionally, as the heater gets hotter, the resistance goes up which means it will take even longer for \(V_S\) to rise high enough to trigger the main triac!
+
+It would be best to design
+</p>
+<br>
+<br>
+<h1>Power Board (Revised Design)</h1>
+<p class="text">
+The triac needs to be made more sensitive so that the gate trigger current will occur 
+</p>
+<br>
+<br>
+<p class="text" style="text-align: center"><i>Last Updated: 30 Nov 2025</i></p>

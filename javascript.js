@@ -26,9 +26,15 @@ function resizeTable() {
     mainTable.style.width = mainTableWidth + 'px';
 }
 
+function reloadEquations(element) {
+    MathJax.Hub.Queue(["Typeset", MathJax.Hub, element]);
+    console.log('reloadEquations')
+}
+
 function loadContent() {
     // Insert div contents
-    const contentElements = document.getElementsByTagName("div");
+    // const contentElements = document.getElementsByTagName("div");
+    const contentElements = document.querySelectorAll("div");
 
     for (let i = 0; i < contentElements.length; i++) {
         // Added this code to replace the ID with parameters from the URL that match the classname
@@ -56,7 +62,8 @@ function loadContent() {
             return response.text();
         })
         .then(data => {
-            contentElements[i].innerHTML = data; // Inserts the text into the code block
+            contentElements[i].innerHTML = data; // Load content into the page
+            reloadEquations(contentElements[i]); // Re-render equations
         })
         .catch(error => {
             contentElements[i].textContent = `Error loading file: ${error}`;
