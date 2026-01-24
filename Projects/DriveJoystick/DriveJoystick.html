@@ -1,2 +1,237 @@
 <link rel="stylesheet" href="textcontent-stylesheet.css">
-<h1>Introduction</h1>
+<h1>Objective</h1>
+<br>
+<p class="text">To eliminate the “boxing effect” caused by the circular joystick that limits the turning capabilities of the robot but not compromise sensitivity and control.
+
+A regular XY joystick as found on the VEX controller, with the following code allows for two wheeled robot to move freely:
+</p>
+<p class="text">$$ motor_L=(joy_Y-joy_X) $$</p>
+<p class="text">$$ motor_R=(joy_Y+joy_X) $$</p>
+<p class="text">This program maps the x and y coordinates of the joystick into a “box”. However, this creates a problem because the joystick is a circle. There will be parts of the box that the circle can't reach, and the robot isn't using its full power capability. The image below better illustrates this:
+</p>
+<br>
+<img style="width: 40%;" class="center-img" src="Projects/DriveJoystick/UnusedAreas.png">
+<br>
+<p class="text">By taking the area of the circle and subtracting it from the area of the square, we get a figure of how much power isn't being used:</p>
+<p class="text">$$ ((2)(2))-(3.14(1^2)) $$</p>
+<p class="text">$$ = 4 - 3.14 $$</p>
+<p class="text">$$ = 0.86 $$</p>
+<p class="text">$$ (0.86/4)(100\%) = 22% $$</p>
+<p class="text">A simple solution would be to divide the resulting motor power by 2, effectively shrinking the box. But we run into another problem, the top parts of the circle will “max out” the motor power, as shown below:</p>
+<br>
+<img style="width: 40%;" class="center-img" src="Projects/DriveJoystick/SquareBox.png">
+<br>
+<p class="text">This is a simple solution to the problem above, but makes the joystick super sensitive, and there's lots of unused space where the values of the motors will be stuck at 127!</p>
+<br>
+<h1>Solution</h1>
+<br>
+<p class="text">In quadrant 1 of the joystick, we can either go straight or turn right. Therefore, the right motor is the only one we have to worry about modifying. The left motor's value is simply the hypotenuse of the right triangle created by the x and y components of the joystick (using pythagorean theorem).
+	
+Firstly, I created a table of values relating the x value of the joystick to the right motor power. By experimentation, I found that the joystick values range between -127 and 127, with the 0 value being the neutral position:</p>
+<br>
+<table>
+	<tr class="table-headers">
+		<td>Angle in Standard Position</td>
+		<td>$$ joy_X $$</td>
+		<td>$$ joy_Y $$</td>
+		<td>$$ motor_R $$</td>
+	</tr>
+	<tr>
+		<td>90°</td>
+		<td>0</td>
+		<td>127</td>
+		<td>127</td>
+	</tr>
+	<tr>
+		<td>45°</td>
+		<td>90</td>
+		<td>90</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>0°</td>
+		<td>127</td>
+		<td>0</td>
+		<td>-127</td>
+	</tr>
+</table>
+<br>
+<p class="text">Using these values, I created an equation for a quadratic that connects with these points:</p>
+<p class="text">$$ motor_R = 127 - 0.0158joy_X^2 $$</p>
+<p class="text">Using this knowledge, we can write an equation to model the relationship between the motors and the joystick:</p>
+<p class="text">$$ motor_L = sqrt(joy_X^2 + joy_Y^2) $$</p>
+<p class="text">$$ motor_R = sqrt(joy_X^2 + joy_Y^2) - 0.0158joy_X^2 $$</p>
+<p class="text"><i>Note that we replaced 127 in the previous equation with the hypotenuse, so that we can control the speed of both motors.</i>
+
+Creating code based on these two equations only partially solves our problems. When the hypotenuse equals 127, everything works as expected, but as the hypotenuse approaches zero, the robot starts “jumping around” when the joystick crosses the x axis.
+
+I realized that the “a” value of the quadratic equation above changes with varying hypotenuse lengths. I had to make a new equation relating the a value of the quadratic to the hypotenuse length. I did this by calculating the a values using a bunch of different hypotenuse lengths, and putting those results in a new table:</p>
+<br>
+<table>
+	<tr class="table-headers">
+		<td>$$ joy_X $$</td>
+		<td>$$ motor_R $$</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>45</td>
+	</tr>
+	<tr>
+		<td>45</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>64</td>
+		<td>-64</td>
+	</tr>
+</table>
+<p class="text">$$ motor_R = hyp - 0.0316joy_X^2 $$</p>
+<table>
+	<tr>
+		<td>$$ joy_X $$</td>
+		<td>$$ motor_R $$</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>10</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>0</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>-10</td>
+	</tr>
+</table>
+<p class="text">$$ motor_R = hyp - 0.2007joy_X^2 $$</p>
+<table>
+	<tr>
+		<td>hyp</td>
+		<td>a value</td>
+	</tr>
+	<tr>
+		<td>0</td>
+		<td>0.0158</td>
+	</tr>
+	<tr>
+		<td>7</td>
+		<td>0.0316</td>
+	</tr>
+	<tr>
+		<td>10</td>
+		<td>0.2007</td>
+	</tr>
+</table>
+<p class="text">$$ a = \frac{(0.0158)(127)}{hyp} $$</p>
+<p class="text">Which simplifies to:</p>
+<p class="text">$$ a = \frac{2}{hyp} $$</p>
+<p class="text">Now, using these equations combined, we should have a working drive motor code!</p>
+<p class="text">$$ a = \frac{(0.0158)(127)}{hyp} $$</p>
+<p class="text">$$ a = \frac{2}{hyp} $$</p>
+<p class="text">$$ motor_L = hyp $$</p>
+<p class="text">$$ motor_R = hyp - ajoy_X^2 $$</p>
+<p class="text">Now we can write the full final drive code using all four quadrants (since all that needs to be modified is the sign of the x and y components, and which motors are affected):</p>
+<br>
+<div style="background-color: black; width: 100%; height: auto; overflow-y: auto;">
+    <pre><code class="code language-js" style="white-space: overflow;">
+        Projects/DriveJoystick/mapping1.js
+    </code></pre>
+</div>
+<br>
+<h1>Conclusion</h1>
+<br>
+<p class="text">By using this code, we can get 22 % more power out of the robot's motors. This gives us an advantage and we're more able to push others around the court.</p>
+<br>
+<h1>Part 2</h1>
+<br>
+<p class="text">I initially wrote the above section in my Grade 12 year of highschool. Many years later, I realized that in reality many different transformations exist and will affect the "feel" of the robot's motion because different mappings change how sensitive the joystick is at the center or at the edges of the joystick.
+
+For example, another valid approach would be to implement the following code:</p>
+<br>
+<div style="background-color: black; width: 100%; height: auto; overflow-x: auto;">
+    <pre><code class="code language-js" style="white-space: overflow;">
+        Projects/DriveJoystick/mapping2.js
+    </code></pre>
+</div>
+<br>
+<p class="text">I wrote a small applet that compares the two mappings by showing motor power relative to joystick position. Try it below!</p>
+<br>
+<h1>Joystick to Motor Power Mapping Demo</h1>
+<br>
+<div style="
+    background-color: black;
+    width: 100%;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+">
+    <div style="
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: flex-start;
+    ">
+        <!-- Joystick -->
+        <div style="text-align: center;">
+            <div style="
+                color: white;
+                font-size: 22px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 10px;
+            ">
+                Joystick Position
+            </div>
+            <canvas style="background: black;" id="joystick" width="300" height="300"></canvas>
+        </div>
+
+        <!-- Mapping -->
+        <div style="text-align: center;">
+            <div style="
+                color: white;
+                font-size: 22px;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                margin-bottom: 10px;
+            ">
+                Motor Powers
+            </div>
+            <canvas style="background: black;" id="mapping" width="300" height="300"></canvas>
+        </div>
+
+        <!-- Legend -->
+        <div style="
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #111;
+            padding: 16px 20px;
+            border-radius: 8px;
+            min-width: 160px;
+        ">
+            <div style="
+                font-size: 20px;
+                font-weight: bold;
+                margin-bottom: 12px;
+            ">
+                Legend
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 8px;">
+                <div style="width: 14px; height: 14px; background: red; border-radius: 50%;"></div>
+                <div style="font-size: 18px;">Mapping 1</div>
+            </div>
+
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div style="width: 14px; height: 14px; background: lime; border-radius: 50%;"></div>
+                <div style="font-size: 18px;">Mapping 2</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="Projects/DriveJoystick/DriveJoystick.js"></script>
+</div>
+<br>
+<br>
+<pre class="text" style="text-align: center"><i>Last Updated: 24 Jan 2026</i></pre>

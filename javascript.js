@@ -28,16 +28,15 @@ function resizeTable() {
 
 function reloadEquations(element) {
     MathJax.Hub.Queue(["Typeset", MathJax.Hub, element]);
-    console.log('reloadEquations')
+    // console.log('reloadEquations')
 }
 
 function loadContent() {
     // Insert div contents
-    // const contentElements = document.getElementsByTagName("div");
     const contentElements = document.querySelectorAll("div");
 
     for (let i = 0; i < contentElements.length; i++) {
-        // Added this code to replace the ID with parameters from the URL that match the classname
+        // Added this code to replace the ID with parameters from the URL that match the classname:
         const contentElementClassName = contentElements[i].className;
 
         let url = window.location.href;
@@ -48,7 +47,7 @@ function loadContent() {
         if (textcontent != null) {
             contentElements[i].id = textcontent;
         }
-        // end added code
+        // End added code
 
         const contentElementName = contentElements[i].id;
 
@@ -57,12 +56,25 @@ function loadContent() {
 
         fetch(contentElementName).then(response => {
             if (!response.ok) {
-                throw new Error('Network response was not ok');
+                throw new Error("Network response was not ok");
             }
             return response.text();
         })
         .then(data => {
             contentElements[i].innerHTML = data; // Load content into the page
+            
+            // Added this code to be able to execute scripts embedded in the project page's HTML file:
+            contentElements[i].querySelectorAll("script").forEach(s => {
+                const addedScript = document.createElement("script");
+                if (s.src) {
+                    addedScript.src = s.src;
+                } else {
+                    addedScript.textContent = s.textContent;
+                }
+                document.body.appendChild(addedScript);
+            });
+            // End added code
+
             reloadEquations(contentElements[i]); // Re-render equations
         })
         .catch(error => {
@@ -73,18 +85,18 @@ function loadContent() {
     // Create an observer instance linked to the callback function
     observer = new MutationObserver(loadCode);
     observer.observe(targetNode, config);
-    console.log('loadContent');
+    // console.log('loadContent');
 }
 
 function loadCode() {
-    console.log('loadCode()');
+    // console.log('loadCode()');
     // Disconnect the observer
     observer.disconnect();
 
     // Insert code contents
     const codeElements = document.getElementsByTagName("code");
 
-    console.log(codeElements.length);
+    // console.log(codeElements.length);
 
     for (let i = 0; i < codeElements.length; i++) {
         const codeElementName = codeElements[i].innerHTML;
@@ -121,7 +133,7 @@ function loadCode() {
 }
 
 function highlightCode() {
-    console.log('highlightCode()');
+    // console.log('highlightCode()');
     
     var documentFullyLoaded = true;
 

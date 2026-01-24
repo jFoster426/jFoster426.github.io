@@ -100,14 +100,14 @@ ol li ol {
     font-size: 24px;
     text-align: left;
     color: white;
-    font-family: 'Arial', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .job-company {
     color: #999;
     font-size: 20px;
     text-align: left;
-    font-family: 'Arial', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .job-details {
@@ -115,7 +115,7 @@ ol li ol {
     margin-top: 4px;
     font-size: 16px;
     text-align: left;
-    font-family: 'Arial', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .job-location {
@@ -123,7 +123,7 @@ ol li ol {
     margin-top: 4px;
     font-size: 16px;
     text-align: left;
-    font-family: 'Arial', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 hr {
@@ -137,7 +137,7 @@ hr {
     text-align: left;
     color: rgb(255, 136, 164);
     text-decoration: none;
-    font-family: 'Arial', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     cursor: pointer;
 }
 
@@ -148,7 +148,7 @@ hr {
 
 .about-section {
     font-size: 16px;
-    font-family: Arial, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     color: #ddd;
     position: relative;
@@ -187,4 +187,23 @@ hr {
 
 .social-icons a:hover img {
     transform: scale(1.1);
+}
+
+table {
+    width: 50%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: auto; /* center the table */
+}
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+tr:nth-child(odd) {
+  background-color: #9bf3f3;
+}
+
+.table-headers {
+    font-weight: bold;
 }

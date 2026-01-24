@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Circle to Square Mapping Demo</title>
+<style>
+  body {
+    font-family: system-ui, sans-serif;
+    background: #111;
+    color: #eee;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  canvas {
+    background: #000000;
+    border-radius: 8px;
+  }
+
+  .panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .label {
+    font-size: 14px;
+    opacity: 0.8;
+  }
+</style>
+</head>
+<body>
+
+<div class="panel">
+  <div class="label">Joystick (Circle)</div>
+  <canvas id="joystick" width="200" height="200"></canvas>
+</div>
+
+<div class="panel">
+  <div class="label">Mapping 1</div>
+  <canvas id="mapping" width="200" height="200"></canvas>
+</div>
+
+<script>
+const joy = document.getElementById("joystick");
+const map = document.getElementById("mapping")
+const ctxJoy = joy.getContext("2d");
+const ctxMap = map.getContext("2d");
+
+const R = 90;
+let x = 0, y = 0;
+let dragging = false;
+
+function clampToCircle(px, py) {
+  const r = Math.hypot(px, py);
+  if (r > 1) return [px / r, py / r];
+  return [px, py];
+}
+
+/* ---------------- MAPPINGS ---------------- */
+
+function mapping1(x, y) {
+    if (x === 0 && y === 0) return [0, 0]; // Special case
+    const r = Math.hypot(x, y);
+    const a = 2 / r;
+
+    var motorL, motorR;
+
+    if(x >= 0 && y <= 0) {
+	    motorL = -r;
+	    motorR = -r + (a * x*x);
+    }
+    if(x <= 0 && y <= 0) {
+	    motorL = -r + (a * x*x);
+        motorR = -r;
+    }
+    if(x >= 0 && y >= 0) {
+        motorL = r - (a * x*x);
+        motorR = r;
+    }
+    if(x <= 0 && y >= 0) {
+        motorL = r;
+    	motorR = r - (a * x*x);
+    }
+    return [motorL, motorR];
+}
+
+function mapping2(x, y) {
+    var rr = Math.min(x*x + y*y, 1);
+    var c;
+    var L, R;
+    if (rr === 0.0) {
+        c = 0;
+    } else {
+        c = rr / (Math.abs(x) + Math.abs(y));
+    }
+    L = c*y - c*x;
+    R = c*y + c*x;
+    return [L, R];
+}
+
+/* ---------------- DRAWING ---------------- */
+
+function update() {
+  const [ml1, mr1] = mapping1(x, y);
+  const [ml2, mr2] = mapping2(x, y);
+
+  ctxJoy.resetTransform();
+  ctxJoy.clearRect(0, 0, 200, 200);
+  ctxJoy.translate(100, 100);
+  ctxJoy.strokeStyle = "#555";
+  ctxJoy.beginPath();
+  ctxJoy.arc(0, 0, R, 0, Math.PI*2);
+  ctxJoy.stroke();
+  ctxJoy.beginPath();
+  ctxJoy.moveTo(-100, 0);
+  ctxJoy.lineTo(100, 0);
+  ctxJoy.stroke();
+  ctxJoy.beginPath();
+  ctxJoy.moveTo(0, -100);
+  ctxJoy.lineTo(0, 100);
+  ctxJoy.stroke();
+  ctxJoy.fillStyle = "#4af";
+  ctxJoy.beginPath();
+  ctxJoy.arc(x*R, y*R, 6, 0, Math.PI*2);
+  ctxJoy.fill();
+
+  ctxMap.resetTransform();
+  ctxMap.clearRect(0, 0, 200, 200);
+  ctxMap.translate(100, 100);
+  ctxMap.fillStyle = "rgba(255, 0, 0, 1)";
+  ctxMap.fillRect(-R, 0, R/2, ml1*R);
+  ctxMap.fillRect(R/2, 0, R/2, mr1*R);
+  ctxMap.fill();
+  ctxMap.fillStyle = "rgba(0, 255, 0, 1)";
+  ctxMap.fillRect(-R/2, 0, R/2, ml2*R);
+  ctxMap.fillRect(0, 0, R/2, mr2*R);
+  ctxMap.fill();
+}
+
+joy.addEventListener("pointermove", e => {
+  const rect = joy.getBoundingClientRect();
+  const px = (e.clientX - rect.left - 100) / R;
+  const py = (e.clientY - rect.top - 100) / R;
+  [x, y] = clampToCircle(px, py);
+  update();
+});
+</script>
+
+</body>
+</html>
