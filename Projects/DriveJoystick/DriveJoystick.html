@@ -23,6 +23,7 @@ A regular XY joystick as found on the VEX controller, with the following code al
 <br>
 <p class="text">This is a simple solution to the problem above, but makes the joystick super sensitive, and there's lots of unused space where the values of the motors will be stuck at 127!</p>
 <br>
+<br>
 <h1>Solution</h1>
 <br>
 <p class="text">In quadrant 1 of the joystick, we can either go straight or turn right. Therefore, the right motor is the only one we have to worry about modifying. The left motor's value is simply the hypotenuse of the right triangle created by the x and y components of the joystick (using pythagorean theorem).
@@ -139,9 +140,11 @@ I realized that the “a” value of the quadratic equation above changes with v
     </code></pre>
 </div>
 <br>
+<br>
 <h1>Conclusion</h1>
 <br>
 <p class="text">By using this code, we can get 22 % more power out of the robot's motors. This gives us an advantage and we're more able to push others around the court.</p>
+<br>
 <br>
 <h1>Part 2</h1>
 <br>
@@ -157,12 +160,14 @@ For example, another valid approach would be to implement the following code:</p
 <br>
 <p class="text">I wrote a small applet that compares the two mappings by showing motor power relative to joystick position. Try it below!</p>
 <br>
+<br>
 <h1>Joystick to Motor Power Mapping Demo</h1>
+<br>
 <br>
 <div style="
     background-color: black;
     width: 100%;
-    padding: 40px 20px;
+    padding: 20px 0px;
     display: flex;
     justify-content: center;
 ">
@@ -229,9 +234,8 @@ For example, another valid approach would be to implement the following code:</p
         </div>
     </div>
 </div>
-
 <script src="Projects/DriveJoystick/DriveJoystick.js"></script>
 </div>
 <br>
 <br>
-<pre class="text" style="text-align: center"><i>Last Updated: 24 Jan 2026</i></pre>
+<pre class="text" style="text-align: center"><i>Last Updated: 26 Jan 2026</i></pre>

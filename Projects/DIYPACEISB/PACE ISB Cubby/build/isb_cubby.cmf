@@ -1,0 +1,275 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$build\isb_cubby.o
+code CODE 0 5 5 8F 2 1
+reset_vec CODE 0 0 0 1 2 1
+isr_vec CODE 0 4 4 1 2 1
+config CONFIG 4 2007 2007 2 2 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 20-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 20-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 1-3 2
+CONST 94-FFF 2
+ENTRY 1-3 2
+ENTRY 94-FFF 2
+IDLOC 2000-2003 2
+CODE 1-3 2
+CODE 94-FFF 2
+SFR0 2-7 1
+SFR3 180-18F 1
+COMMON 70-7F 1
+EEDATA 2100-21FF 2
+STRCODE 1-3 2
+STRCODE 94-FFF 2
+STRING 1-3 2
+STRING 94-FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$build\isb_cubby.o
+4 isr_vec CODE >51:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+0 reset_vec CODE >44:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5 code CODE >62:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7 code CODE >63:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8 code CODE >64:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+9 code CODE >66:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+B code CODE >67:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+C code CODE >68:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+D code CODE >69:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+E code CODE >70:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+F code CODE >71:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+10 code CODE >73:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+12 code CODE >74:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+13 code CODE >75:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+14 code CODE >79:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+16 code CODE >80:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+17 code CODE >81:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+18 code CODE >82:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+19 code CODE >83:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+1A code CODE >85:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+1C code CODE >86:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+1D code CODE >88:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+1F code CODE >89:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+20 code CODE >91:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+21 code CODE >93:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+23 code CODE >94:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+24 code CODE >96:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+26 code CODE >100:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+27 code CODE >101:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+28 code CODE >102:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+29 code CODE >104:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+2A code CODE >105:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+2B code CODE >106:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+2C code CODE >107:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+2D code CODE >108:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+2E code CODE >110:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+30 code CODE >111:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+31 code CODE >112:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+32 code CODE >113:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+34 code CODE >114:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+35 code CODE >115:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+36 code CODE >117:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+38 code CODE >118:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+39 code CODE >119:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+3B code CODE >120:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+3C code CODE >121:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+3E code CODE >122:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+3F code CODE >123:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+40 code CODE >130:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+42 code CODE >131:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+43 code CODE >132:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+44 code CODE >134:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+45 code CODE >135:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+46 code CODE >137:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+47 code CODE >138:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+48 code CODE >139:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+49 code CODE >140:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4A code CODE >141:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4B code CODE >148:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4C code CODE >149:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4D code CODE >151:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4E code CODE >152:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+4F code CODE >153:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+50 code CODE >160:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+52 code CODE >162:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+53 code CODE >163:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+54 code CODE >164:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+55 code CODE >165:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+56 code CODE >166:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+57 code CODE >167:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+58 code CODE >168:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+59 code CODE >170:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5A code CODE >171:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5B code CODE >172:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5C code CODE >173:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5D code CODE >174:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5E code CODE >175:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+5F code CODE >176:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+60 code CODE >178:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+61 code CODE >179:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+62 code CODE >180:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+63 code CODE >181:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+64 code CODE >182:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+65 code CODE >184:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+66 code CODE >185:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+67 code CODE >186:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+68 code CODE >187:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+69 code CODE >188:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6A code CODE >190:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6B code CODE >191:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6C code CODE >192:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6D code CODE >193:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6E code CODE >194:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+6F code CODE >196:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+70 code CODE >197:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+71 code CODE >198:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+72 code CODE >199:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+73 code CODE >200:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+74 code CODE >202:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+75 code CODE >203:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+76 code CODE >204:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+77 code CODE >205:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+78 code CODE >206:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+79 code CODE >208:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7A code CODE >209:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7B code CODE >210:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7C code CODE >211:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7D code CODE >212:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7E code CODE >214:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+7F code CODE >215:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+80 code CODE >216:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+81 code CODE >217:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+82 code CODE >218:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+83 code CODE >220:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+84 code CODE >221:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+85 code CODE >222:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+86 code CODE >223:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+87 code CODE >224:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+88 code CODE >226:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+89 code CODE >227:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8A code CODE >228:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8B code CODE >229:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8C code CODE >230:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8D code CODE >231:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8E code CODE >232:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+8F code CODE >234:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+90 code CODE >237:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+91 code CODE >238:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+92 code CODE >240:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+93 code CODE >241:C:\Users\juddf\Desktop\PACE\PACE ISB Cubby\isb_cubby.S
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+__Hspace_0 94 0 ABS 0 - -
+__Hspace_1 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__Hspace_4 4010 0 ABS 0 - -
+__Hisr_vec A 0 CODE 0 isr_vec -
+__Hudata_bank0 A 0 ABS 0 udata_bank0 -
+__Hudata_bank1 A 0 ABS 0 udata_bank1 -
+__Hudata_bank2 A 0 ABS 0 udata_bank2 -
+__Hudata_bank3 A 0 ABS 0 udata_bank3 -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+__Hedata A 0 ABS 0 edata -
+__Hudata A 0 ABS 0 udata -
+__Hconfig 4012 0 CONFIG 4 config -
+__Ledata A 0 ABS 0 edata -
+__Ludata A 0 ABS 0 udata -
+__Hcode A 0 ABS 0 code -
+__Hdata A 0 ABS 0 data -
+__Lcode A 0 ABS 0 code -
+__Ldata A 0 ABS 0 data -
+__S0 94 0 ABS 0 - -
+__S1 0 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+main A 0 CODE 0 code build\isb_cubby.o
+__Lconfig 0 0 CONFIG 4 config -
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__Lspace_4 0 0 ABS 0 - -
+__Lisr_vec 8 0 CODE 0 isr_vec -
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__Ludata_bank0 A 0 ABS 0 udata_bank0 -
+__Ludata_bank1 A 0 ABS 0 udata_bank1 -
+__Ludata_bank2 A 0 ABS 0 udata_bank2 -
+__Ludata_bank3 A 0 ABS 0 udata_bank3 -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+__Hudata_shr A 0 ABS 0 udata_shr -
+__Ludata_shr A 0 ABS 0 udata_shr -
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+reset_vec 0 0 0 1 2
+isr_vec 0 4 8 90 2
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

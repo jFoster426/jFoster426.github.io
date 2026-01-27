@@ -1,0 +1,94 @@
+# Generated 26/03/2025 GMT
+
+# Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+# All rights reserved.
+# 
+# This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+# 
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+# 
+#     1. Redistributions of source code must retain the above copyright notice, this list of
+#        conditions and the following disclaimer.
+# 
+#     2. Redistributions in binary form must reproduce the above copyright notice, this list
+#        of conditions and the following disclaimer in the documentation and/or other
+#        materials provided with the distribution. Publication is not required when
+#        this file is used in an embedded application.
+# 
+#     3. Microchip's name may not be used to endorse or promote products derived from this
+#        software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Microchip PIC16F753 Configuration Word Definitions
+
+# File Syntax:
+# Each configuration register is given as:
+# 
+#     CWORD:<address>:<mask>:<default value>[:<name>[,<alias list>]]
+# 
+# for each CWORD the configuration settings are listed as
+# 
+#     CSETTING:<mask>:<name>[,<alias list>]:<description>
+# 
+# lastly for each CSETTING all possible values are listed as
+# 
+#     CVALUE:<value>:<name>[,<alias list>]:<description>
+# 
+# All numerical values are given in unqualified hex.  In terms of
+# #pragma config, note the following correspondence:
+# 
+#    #pragma config CSETTING<name> = CVALUE<name>
+# 
+# The compiler may also emit a message when it detects certain programming.
+# This behaviour is defined by the following record
+# 
+#     CMSG:<CSETTING name>=<CVALUE name>[,...]:<message number>
+# 
+# If the compiler encounters the given programming then it will emit the
+# with the corresponding numnber.  Note that these records must appear last
+# in the file.
+# 
+# Comments are also permitted.  Any line beginning with a '#'
+# character will be treated as a comment.
+
+CWORD:2007:3F79:3FFF:CONFIG
+CSETTING:1:FOSC0:FOSC: Oscillator Selection bit
+CVALUE:1:EC:EC oscillator mode.  CLKIN function on RA5/CLKIN
+CVALUE:0:INT:Internal oscillator mode.  I/O function on RA5/CLKIN
+CSETTING:8:WDTE:Watchdog Timer Enable bit
+CVALUE:8:ON:Watchdog Timer enabled
+CVALUE:0:OFF:Watchdog Timer disabled
+CSETTING:10:PWRTE:Power-up Timer Enable bit
+CVALUE:10:OFF:Power-up Timer disabled
+CVALUE:0:ON:Power-up Timer enabled
+CSETTING:20:MCLRE:MCLR/VPP Pin Function Select bit
+CVALUE:20:ON:MCLR pin is MCLR function with internal weak pullup
+CVALUE:0:OFF:MCLR pin is alternate function
+CSETTING:40:CP:Code Protection bit
+CVALUE:40:OFF:Program memory code protection is disabled
+CVALUE:0:ON:Program memory code protection is enabled
+CSETTING:300:BOREN:Brown-out Reset Enable bits
+CVALUE:300:EN:BOR enabled
+CVALUE:200:SLEEP_DIS:BOR enabled during operation and disabled in Sleep
+CVALUE:0:DIS:BOR disabled
+CSETTING:C00:WRT:Flash Program Memory Self Write Enable bit
+CVALUE:C00:OFF:Flash self-write protection off
+CVALUE:800:FOURTH:000h to 0FFh self-write protected
+CVALUE:400:HALF:000h to 1FFh self-write protected
+CVALUE:0:ALL:000h to 3FFh self-write protected
+CSETTING:1000:CLKOUTEN:Clock Out Enable bit
+CVALUE:1000:OFF:CLKOUT function disabled.  CLKOUT pin acts as I/O
+CVALUE:0:ON:CLKOUT function enabled.  CLKOUT pin is CLKOUT
+CWORD:2000:7F:3FFF:IDLOC0
+CWORD:2001:7F:3FFF:IDLOC1
+CWORD:2002:7F:3FFF:IDLOC2
+CWORD:2003:7F:3FFF:IDLOC3

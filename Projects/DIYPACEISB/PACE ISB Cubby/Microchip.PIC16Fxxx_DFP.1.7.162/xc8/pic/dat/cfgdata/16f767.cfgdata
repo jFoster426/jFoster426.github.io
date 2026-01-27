@@ -1,0 +1,112 @@
+# Generated 26/03/2025 GMT
+
+# Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+# All rights reserved.
+# 
+# This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+# 
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+# 
+#     1. Redistributions of source code must retain the above copyright notice, this list of
+#        conditions and the following disclaimer.
+# 
+#     2. Redistributions in binary form must reproduce the above copyright notice, this list
+#        of conditions and the following disclaimer in the documentation and/or other
+#        materials provided with the distribution. Publication is not required when
+#        this file is used in an embedded application.
+# 
+#     3. Microchip's name may not be used to endorse or promote products derived from this
+#        software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Microchip PIC16F767 Configuration Word Definitions
+
+# File Syntax:
+# Each configuration register is given as:
+# 
+#     CWORD:<address>:<mask>:<default value>[:<name>[,<alias list>]]
+# 
+# for each CWORD the configuration settings are listed as
+# 
+#     CSETTING:<mask>:<name>[,<alias list>]:<description>
+# 
+# lastly for each CSETTING all possible values are listed as
+# 
+#     CVALUE:<value>:<name>[,<alias list>]:<description>
+# 
+# All numerical values are given in unqualified hex.  In terms of
+# #pragma config, note the following correspondence:
+# 
+#    #pragma config CSETTING<name> = CVALUE<name>
+# 
+# The compiler may also emit a message when it detects certain programming.
+# This behaviour is defined by the following record
+# 
+#     CMSG:<CSETTING name>=<CVALUE name>[,...]:<message number>
+# 
+# If the compiler encounters the given programming then it will emit the
+# with the corresponding numnber.  Note that these records must appear last
+# in the file.
+# 
+# Comments are also permitted.  Any line beginning with a '#'
+# character will be treated as a comment.
+
+CWORD:2007:39FF:3FFF:CONFIG1
+CSETTING:13:FOSC:Oscillator Selection bits
+CVALUE:13:EXTRCCLK,_EXTRC_CLKOUT:EXTRC oscillator; CLKO function on OSC2/CLKO/RA6
+CVALUE:12:EXTRCIO,_EXTRC_IO:EXTRC oscillator; port I/O function on OSC2/CLKO/RA6
+CVALUE:11:INTOSCCLK,_INTRC_CLKOUT:INTRC oscillator; CLKO function on OSC2/CLKO/RA6 and port I/O function on OSC1/CLKI/RA7
+CVALUE:10:INTOSCIO,_INTRC_IO:INTRC oscillator; port I/O function on OSC1/CLKI/RA7 and OSC2/CLKO/RA6
+CVALUE:3:EC,_EXTCLK:EXTCLK; port I/O function on OSC2/CLKO/RA6
+CVALUE:2:HS,_HS_OSC:HS oscillator
+CVALUE:1:XT,_XT_OSC:XT oscillator
+CVALUE:0:LP,_LP_OSC:LP oscillator
+CSETTING:4:WDTE:Watchdog Timer Enable bit
+CVALUE:4:ON,_WDT_ON:WDT enabled
+CVALUE:0:OFF,_WDT_OFF:WDT disabled
+CSETTING:8:PWRTE:Power-up Timer Enable bit
+CVALUE:8:OFF:PWRT disabled
+CVALUE:0:ON:PWRT enabled
+CSETTING:20:MCLRE:MCLR/VPP/RE3 Pin Function Select bit
+CVALUE:20:ON,_MCLR_ON:MCLR/VPP/RE3 pin function is MCLR
+CVALUE:0:OFF,_MCLR_OFF:MCLR/VPP/RE3 pin function is digital input only, MCLR gated to '1'
+CSETTING:40:BOREN:Brown-out Reset Enable bit
+CVALUE:40:ON,_BOREN_1:Enabled
+CVALUE:0:OFF,_BOREN_0:Disabled
+CSETTING:180:BORV:Brown-out Reset Voltage bits
+CVALUE:180:20,_VBOR_2_0:VBOR set to 2.0V
+CVALUE:100:27,_VBOR_2_7:VBOR set to 2.7V
+CVALUE:80:42,_VBOR_4_2:VBOR set to 4.2V
+CVALUE:0:45,_VBOR_4_5:VBOR set to 4.5V
+CSETTING:800:DEBUG:In-Circuit Debugger Mode bit
+CVALUE:800:OFF:In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins
+CVALUE:0:ON:In-Circuit Debugger enabled, RB6 and RB7 are dedicated to the debugger
+CSETTING:1000:CCP2MX:CCP2 Multiplex bit
+CVALUE:1000:RC1,_CCP2_RC1:CCP2 is on RC1
+CVALUE:0:RB3,_CCP2_RB3:CCP2 is on RB3
+CSETTING:2000:CP:Flash Program Memory Code Protection bits
+CVALUE:2000:OFF:Code protection off
+CVALUE:0:ON,_CP_ALL:0000h to 1FFFh code-protected
+CWORD:2008:43:3FFF:CONFIG2
+CSETTING:1:FCMEN:Fail-Safe Clock Monitor Enable bit
+CVALUE:1:ON:Fail-Safe Clock Monitor enabled
+CVALUE:0:OFF:Fail-Safe Clock Monitor disabled
+CSETTING:2:IESO:Internal External Switchover bit
+CVALUE:2:ON:Internal External Switchover mode enabled
+CVALUE:0:OFF:Internal External Switchover mode disabled
+CSETTING:40:BORSEN:Brown-out Reset Software Enable bit
+CVALUE:40:ON,_BORSEN_1:Enabled
+CVALUE:0:OFF,_BORSEN_0:Disabled
+CWORD:2000:7F:3FFF:IDLOC0
+CWORD:2001:7F:3FFF:IDLOC1
+CWORD:2002:7F:3FFF:IDLOC2
+CWORD:2003:7F:3FFF:IDLOC3

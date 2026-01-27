@@ -1,0 +1,318 @@
+<!-- Generated 26/03/2025 GMT -->
+
+<!--
+ Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ All rights reserved.
+ 
+ This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+ 
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ 
+     1. Redistributions of source code must retain the above copyright notice, this list of
+        conditions and the following disclaimer.
+ 
+     2. Redistributions in binary form must reproduce the above copyright notice, this list
+        of conditions and the following disclaimer in the documentation and/or other
+        materials provided with the distribution. Publication is not required when
+        this file is used in an embedded application.
+ 
+     3. Microchip's name may not be used to endorse or promote products derived from this
+        software without specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Microchip MPLAB XC8 C Compiler: 16LF767 Support Information</TITLE>
+</HEAD>
+<BODY>
+<h2>16LF767 Support Information</h2>
+<h3>XC8-CC #pragma config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;named value&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>// Brown-out Reset Enable bit : Enabled<br/>// Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>// CCP2 Multiplex bit : CCP2 is on RC1<br/>// Flash Program Memory Code Protection bits : Code protection off<br/>#pragma config FOSC = EXTRCCLK, WDTE = ON, PWRTE = OFF, MCLRE = ON, BOREN = ON, BORV = 20, DEBUG = OFF, CCP2MX = RC1, CP = OFF</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>// Brown-out Reset Enable bit : Enabled<br/>// Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>// CCP2 Multiplex bit : CCP2 is on RC1<br/>// Flash Program Memory Code Protection bits : Code protection off<br/>#pragma config FOSC = 0x13, WDTE = 0x1, PWRTE = 0x1, MCLRE = 0x1, BOREN = 0x1, BORV = 0x3, DEBUG = 0x1, CCP2MX = 0x1, CP = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;register&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>// Brown-out Reset Enable bit : Enabled<br/>// Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>// CCP2 Multiplex bit : CCP2 is on RC1<br/>// Flash Program Memory Code Protection bits : Code protection off<br/>#pragma config CONFIG1 = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>// IDLOC @ 0x2000<br/>#pragma config IDLOC0 = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>PIC-AS config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"="&lt;named value&gt;"</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>; Brown-out Reset Enable bit : Enabled<br/>; Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>; CCP2 Multiplex bit : CCP2 is on RC1<br/>; Flash Program Memory Code Protection bits : Code protection off<br/>config "FOSC" = "EXTRCCLK", "WDTE" = "ON", "PWRTE" = "OFF", "MCLRE" = "ON", "BOREN" = "ON", "BORV" = "20", "DEBUG" = "OFF", "CCP2MX" = "RC1", "CP" = "OFF"</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>; Brown-out Reset Enable bit : Enabled<br/>; Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>; CCP2 Multiplex bit : CCP2 is on RC1<br/>; Flash Program Memory Code Protection bits : Code protection off<br/>config "FOSC" = 0x13, "WDTE" = 0x1, "PWRTE" = 0x1, "MCLRE" = 0x1, "BOREN" = 0x1, "BORV" = 0x3, "DEBUG" = 0x1, "CCP2MX" = 0x1, "CP" = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;register&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EXTRC oscillator; CLKO function on OSC2/CLKO/RA6<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; MCLR/VPP/RE3 Pin Function Select bit : MCLR/VPP/RE3 pin function is MCLR<br/>; Brown-out Reset Enable bit : Enabled<br/>; Brown-out Reset Voltage bits : VBOR set to 2.0V<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>; CCP2 Multiplex bit : CCP2 is on RC1<br/>; Flash Program Memory Code Protection bits : Code protection off<br/>config "CONFIG1" = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>; IDLOC @ 0x2000<br/>config "IDLOC0" = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>Configuration Registers & Settings</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG1 @ 0x2007</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>FOSC</tt></b></td>
+<td><b>Oscillator Selection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EXTRCCLK</tt></td>
+<td>EXTRC oscillator; CLKO function on OSC2/CLKO/RA6</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EXTRCIO</tt></td>
+<td>EXTRC oscillator; port I/O function on OSC2/CLKO/RA6</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>INTOSCCLK</tt></td>
+<td>INTRC oscillator; CLKO function on OSC2/CLKO/RA6 and port I/O function on OSC1/CLKI/RA7</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>INTOSCIO</tt></td>
+<td>INTRC oscillator; port I/O function on OSC1/CLKI/RA7 and OSC2/CLKO/RA6</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EC</tt></td>
+<td>EXTCLK; port I/O function on OSC2/CLKO/RA6</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>HS</tt></td>
+<td>HS oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>XT</tt></td>
+<td>XT oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>LP</tt></td>
+<td>LP oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WDTE</tt></b></td>
+<td><b>Watchdog Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>WDT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>WDT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>PWRTE</tt></b></td>
+<td><b>Power-up Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>PWRT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>PWRT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>MCLRE</tt></b></td>
+<td><b>MCLR/VPP/RE3 Pin Function Select bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>MCLR/VPP/RE3 pin function is MCLR</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>MCLR/VPP/RE3 pin function is digital input only, MCLR gated to '1'</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BOREN</tt></b></td>
+<td><b>Brown-out Reset Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BORV</tt></b></td>
+<td><b>Brown-out Reset Voltage bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>20</tt></td>
+<td>VBOR set to 2.0V</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>27</tt></td>
+<td>VBOR set to 2.7V</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>42</tt></td>
+<td>VBOR set to 4.2V</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>45</tt></td>
+<td>VBOR set to 4.5V</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>DEBUG</tt></b></td>
+<td><b>In-Circuit Debugger Mode bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>In-Circuit Debugger enabled, RB6 and RB7 are dedicated to the debugger</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CCP2MX</tt></b></td>
+<td><b>CCP2 Multiplex bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>RC1</tt></td>
+<td>CCP2 is on RC1</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>RB3</tt></td>
+<td>CCP2 is on RB3</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CP</tt></b></td>
+<td><b>Flash Program Memory Code Protection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Code protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>0000h to 1FFFh code-protected</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG2 @ 0x2008</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>FCMEN</tt></b></td>
+<td><b>Fail-Safe Clock Monitor Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Fail-Safe Clock Monitor enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Fail-Safe Clock Monitor disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>IESO</tt></b></td>
+<td><b>Internal External Switchover bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Internal External Switchover mode enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Internal External Switchover mode disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BORSEN</tt></b></td>
+<td><b>Brown-out Reset Software Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Disabled</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC0 @ 0x2000</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC1 @ 0x2001</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC2 @ 0x2002</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC3 @ 0x2003</div>
+</th>
+</tbody></table>
+<br/>
+</BODY>
+</HTML>

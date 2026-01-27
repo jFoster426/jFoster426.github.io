@@ -1,0 +1,1 @@
+ipecmd -P16F88 -TPPK3 -M -F"build/isb_cubby.hex" -OL

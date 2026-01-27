@@ -1,0 +1,102 @@
+<MPLAB_Header_Database xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../schema/MPHeader.xsd">
+  <Information file="MPHEADER.XML" version="2.00.01"/>
+  <ICD>
+    <Header caladdr="0x0404" deaddr="0x0600" devseladdr="0x07FF" emulendaddr="0xA7" emulstartaddr="0xA6" hdruse="required" name="AC162059">
+      <Device devselval="0x10" hdrstate="green" name="PIC10F200"/>
+      <Device devselval="0x12" hdrstate="green" name="PIC10F202"/>
+      <Device devselval="0x14" hdrstate="green" name="PIC10F204"/>
+      <Device devselval="0x16" hdrstate="green" name="PIC10F206"/>
+      <Device devselval="0x18" hdrstate="green" name="PIC12F508"/>
+      <Device devselval="0x19" hdrstate="green" name="PIC12F509"/>
+      <Device devselval="0x1C" hdrstate="green" name="PIC16F505"/>
+    </Header>
+    <Header caladdr="0x404" deaddr="0x0600" devseladdr="0x07FF" emulendaddr="0xA7" emulstartaddr="0xA6" hdruse="required" name="AC162070">
+      <Device devselval="0x12" hdrstate="green" name="MCV08A"/>
+      <Device devselval="0x10" hdrstate="green" name="PIC10F220"/>
+      <Device devselval="0x11" hdrstate="green" name="PIC10F222"/>
+      <Device devselval="0x12" hdrstate="green" name="PIC12F510"/>
+      <Device devselval="0x13" hdrstate="green" name="PIC16F506"/>
+    </Header>
+    <Header caladdr="0x0444" deaddr="0x0600" devseladdr="0x07FF" emulendaddr="0xA7" emulstartaddr="0xA6" hdruse="required" name="AC162096">
+      <Device devselval="0x11" hdrstate="green" name="MCV14A"/>
+      <Device devselval="0x10" hdrstate="green" name="PIC12F519"/>
+      <Device devselval="0x11" hdrstate="green" name="PIC16F526"/>
+    </Header>
+    <Header caladdr="0x0444" deaddr="0x0600" devseladdr="0x07FF" emulendaddr="0X8B" emulstartaddr="0x8A" freezealladdr="0x8A" freezeallmask="0x40" hdruse="required" name="AC244061">
+      <Device devselval="0x10" hdrstate="green" name="PIC16F527"/>
+    </Header>
+    <Header caladdr="0x0844" deaddr="0x0E00" devseladdr="0x0FFF" emulendaddr="0x8B" emulstartaddr="0x8A" freezealladdr="0x8A" freezeallmask="0x40" hdruse="required" name="AC244062">
+      <Device devselval="0x10" hdrstate="green" name="PIC16F570"/>
+    </Header>
+    <Header hdruse="required" name="AC162083">
+      <Device hdrstate="green" name="PIC12F609"/>
+      <Device hdrstate="green" name="PIC12F615"/>
+      <Device devselval="0x21C0" hdrstate="green" name="PIC12F617"/>
+      <Device hdrstate="green" name="PIC12HV609"/>
+      <Device hdrstate="green" name="PIC12HV615"/>
+      <Device hdrstate="green" name="PIC16F610"/>
+      <Device hdrstate="green" name="PIC16F616"/>
+      <Device hdrstate="green" name="PIC16HV610"/>
+      <Device hdrstate="green" name="PIC16HV616"/>
+    </Header>
+    <Header deaddr="0x0F00" devid="0x1120" hdruse="required" name="AC162053">
+      <Device hdrstate="green" name="PIC16F627A"/>
+      <Device hdrstate="green" name="PIC16LF627A"/>
+      <Device hdrstate="green" name="PIC16F628A"/>
+      <Device hdrstate="green" name="PIC16LF628A"/>
+      <Device hdrstate="green" name="PIC16F648A"/>
+      <Device hdrstate="green" name="PIC16LF648A"/>
+    </Header>
+    <Header hdruse="required" name="AC162052">
+      <Device hdrstate="green" name="PIC16F630"/>
+      <Device hdrstate="green" name="PIC16F676"/>
+    </Header>
+    <Header hdruse="required" name="AC162061">
+      <Device hdrstate="green" name="PIC16F631"/>
+      <Device hdrstate="green" name="PIC16F677"/>
+      <Device hdrstate="green" name="PIC16F685"/>
+      <Device hdrstate="green" name="PIC16F687"/>
+      <Device hdrstate="green" name="PIC16F689"/>
+      <Device hdrstate="green" name="PIC16F690"/>
+    </Header>
+    <Header hdruse="required" name="AC162057">
+      <Device hdrstate="green" name="PIC12F635"/>
+      <Device hdrstate="green" name="PIC16F636"/>
+    </Header>
+    <Header hdruse="required" name="AC162066">
+      <Device hdrstate="green" name="PIC16F639"/>
+    </Header>
+    <Header hdruse="required" name="AC162055">
+      <Device hdrstate="green" name="PIC16F684"/>
+    </Header>
+    <Header hdruse="required" name="AC162056">
+      <Device hdrstate="green" name="PIC16F688"/>
+    </Header>
+    <Header devid="0x11A0" hdruse="required" name="AC162054">
+      <Device hdrstate="green" name="PIC16F716"/>
+      <Device hdrstate="green" name="MCV18E"/>
+    </Header>
+    <Header dbgeng="icd_v2" devid="0x18A0" devseladdr="0x18F" emulendaddr="0x17F" emulstartaddr="0xF4" hdruse="optional" name="AC244026">
+      <Device devselval="0x07" hdrstate="green" name="PIC16F722"/>
+      <Device devselval="0x06" hdrstate="green" name="PIC16F723"/>
+      <Device devselval="0x05" hdrstate="green" name="PIC16F724"/>
+      <Device devselval="0x04" hdrstate="green" name="PIC16F726"/>
+      <Device devselval="0x00" hdrstate="green" name="PIC16F727"/>
+    </Header>
+    <Header hdruse="optional" name="AC244060">
+      <Device devid="0x3032" hdrstate="green" name="PIC16F753"/>
+      <Device devid="0x3033" hdrstate="green" name="PIC16HV753"/>
+    </Header>
+    <Header hdruse="required" name="AC162060">
+      <Device hdrstate="green" name="PIC16F785"/>
+      <Device hdrstate="green" name="PIC16HV785"/>
+    </Header>
+    <Header dbgeng="icd_v2" devid="0x19A0" devseladdr="0x18F" emulendaddr="0x17F" emulstartaddr="0xF4" hdruse="optional" name="AC244027">
+      <Device devselval="0x07" hdrstate="green" name="PIC16LF722"/>
+      <Device devselval="0x06" hdrstate="green" name="PIC16LF723"/>
+      <Device devselval="0x05" hdrstate="green" name="PIC16LF724"/>
+      <Device devselval="0x04" hdrstate="green" name="PIC16LF726"/>
+      <Device devselval="0x00" hdrstate="green" name="PIC16LF727"/>
+    </Header>
+  </ICD>
+</MPLAB_Header_Database>

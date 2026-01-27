@@ -1,0 +1,98 @@
+# Generated 26/03/2025 GMT
+
+# Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+# All rights reserved.
+# 
+# This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+# 
+# Redistribution and use in source and binary forms, with or without modification, are
+# permitted provided that the following conditions are met:
+# 
+#     1. Redistributions of source code must retain the above copyright notice, this list of
+#        conditions and the following disclaimer.
+# 
+#     2. Redistributions in binary form must reproduce the above copyright notice, this list
+#        of conditions and the following disclaimer in the documentation and/or other
+#        materials provided with the distribution. Publication is not required when
+#        this file is used in an embedded application.
+# 
+#     3. Microchip's name may not be used to endorse or promote products derived from this
+#        software without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+# INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+# PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+# INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+# PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+# INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+# THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+# Microchip PIC16LF874 Configuration Word Definitions
+
+# File Syntax:
+# Each configuration register is given as:
+# 
+#     CWORD:<address>:<mask>:<default value>[:<name>[,<alias list>]]
+# 
+# for each CWORD the configuration settings are listed as
+# 
+#     CSETTING:<mask>:<name>[,<alias list>]:<description>
+# 
+# lastly for each CSETTING all possible values are listed as
+# 
+#     CVALUE:<value>:<name>[,<alias list>]:<description>
+# 
+# All numerical values are given in unqualified hex.  In terms of
+# #pragma config, note the following correspondence:
+# 
+#    #pragma config CSETTING<name> = CVALUE<name>
+# 
+# The compiler may also emit a message when it detects certain programming.
+# This behaviour is defined by the following record
+# 
+#     CMSG:<CSETTING name>=<CVALUE name>[,...]:<message number>
+# 
+# If the compiler encounters the given programming then it will emit the
+# with the corresponding numnber.  Note that these records must appear last
+# in the file.
+# 
+# Comments are also permitted.  Any line beginning with a '#'
+# character will be treated as a comment.
+
+CWORD:2007:3BFF:3FFF:CONFIG
+CSETTING:3:FOSC:Oscillator Selection bits
+CVALUE:3:EXTRC,_RC_OSC:RC oscillator
+CVALUE:2:HS,_HS_OSC:HS oscillator
+CVALUE:1:XT,_XT_OSC:XT oscillator
+CVALUE:0:LP,_LP_OSC:LP oscillator
+CSETTING:4:WDTE:Watchdog Timer Enable bit
+CVALUE:4:ON,_WDT_ON:WDT enabled
+CVALUE:0:OFF,_WDT_OFF:WDT disabled
+CSETTING:8:PWRTE:Power-up Timer Enable bit
+CVALUE:8:OFF:PWRT disabled
+CVALUE:0:ON:PWRT enabled
+CSETTING:3030:CP:FLASH Program Memory Code Protection bits
+CVALUE:3030:OFF:Code protection off
+CVALUE:2020:UPPER_256:0F00h to 0FFFh code protected
+CVALUE:1010:HALF:0800h to 0FFFh code protected
+CVALUE:0:ALL:0000h to 0FFFh code protected
+CSETTING:40:BOREN:Brown-out Reset Enable bit
+CVALUE:40:ON,_BODEN_ON:BOR enabled
+CVALUE:0:OFF,_BODEN_OFF:BOR disabled
+CSETTING:80:LVP:Low Voltage In-Circuit Serial Programming Enable bit
+CVALUE:80:ON:RB3/PGM pin has PGM function; low-voltage programming enabled
+CVALUE:0:OFF:RB3 is digital I/O, HV on MCLR must be used for programming
+CSETTING:100:CPD:Data EE Memory Code Protection
+CVALUE:100:OFF:Code Protection off
+CVALUE:0:ON:Data EEPROM memory code-protected
+CSETTING:200:WRT:FLASH Program Memory Write Enable
+CVALUE:200:ON,_WRT_ENABLE_ON:Unprotected program memory may be written to by EECON control
+CVALUE:0:OFF,_WRT_ENABLE_OFF:Unprotected program memory may not be written to by EECON control
+CSETTING:800:DEBUG:In-Circuit Debugger Mode bit
+CVALUE:800:OFF:In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins
+CVALUE:0:ON:In-Circuit Debugger enabled, RB6 and RB7 are dedicated to the debugger
+CWORD:2000:7F:3FFF:IDLOC0
+CWORD:2001:7F:3FFF:IDLOC1
+CWORD:2002:7F:3FFF:IDLOC2
+CWORD:2003:7F:3FFF:IDLOC3

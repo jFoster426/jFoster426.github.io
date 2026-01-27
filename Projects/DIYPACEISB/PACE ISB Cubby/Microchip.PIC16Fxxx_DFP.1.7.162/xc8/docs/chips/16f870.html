@@ -1,0 +1,252 @@
+<!-- Generated 26/03/2025 GMT -->
+
+<!--
+ Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ All rights reserved.
+ 
+ This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+ 
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ 
+     1. Redistributions of source code must retain the above copyright notice, this list of
+        conditions and the following disclaimer.
+ 
+     2. Redistributions in binary form must reproduce the above copyright notice, this list
+        of conditions and the following disclaimer in the documentation and/or other
+        materials provided with the distribution. Publication is not required when
+        this file is used in an embedded application.
+ 
+     3. Microchip's name may not be used to endorse or promote products derived from this
+        software without specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Microchip MPLAB XC8 C Compiler: 16F870 Support Information</TITLE>
+</HEAD>
+<BODY>
+<h2>16F870 Support Information</h2>
+<h3>XC8-CC #pragma config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;named value&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : RC oscillator<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// FLASH Program Memory Code Protection bits : Code protection off<br/>// Brown-out Reset Enable bit : BOR enabled<br/>// Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>// Data EE Memory Code Protection : Code Protection off<br/>// FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>#pragma config FOSC = EXTRC, WDTE = ON, PWRTE = OFF, CP = OFF, BOREN = ON, LVP = ON, CPD = OFF, WRT = ALL, DEBUG = OFF</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : RC oscillator<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// FLASH Program Memory Code Protection bits : Code protection off<br/>// Brown-out Reset Enable bit : BOR enabled<br/>// Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>// Data EE Memory Code Protection : Code Protection off<br/>// FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>#pragma config FOSC = 0x3, WDTE = 0x1, PWRTE = 0x1, CP = 0x303, BOREN = 0x1, LVP = 0x1, CPD = 0x1, WRT = 0x1, DEBUG = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;register&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : RC oscillator<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// FLASH Program Memory Code Protection bits : Code protection off<br/>// Brown-out Reset Enable bit : BOR enabled<br/>// Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>// Data EE Memory Code Protection : Code Protection off<br/>// FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>// In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>#pragma config CONFIG = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>// IDLOC @ 0x2000<br/>#pragma config IDLOC0 = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>PIC-AS config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"="&lt;named value&gt;"</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : RC oscillator<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; FLASH Program Memory Code Protection bits : Code protection off<br/>; Brown-out Reset Enable bit : BOR enabled<br/>; Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>; Data EE Memory Code Protection : Code Protection off<br/>; FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>config "FOSC" = "EXTRC", "WDTE" = "ON", "PWRTE" = "OFF", "CP" = "OFF", "BOREN" = "ON", "LVP" = "ON", "CPD" = "OFF", "WRT" = "ALL", "DEBUG" = "OFF"</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : RC oscillator<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; FLASH Program Memory Code Protection bits : Code protection off<br/>; Brown-out Reset Enable bit : BOR enabled<br/>; Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>; Data EE Memory Code Protection : Code Protection off<br/>; FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>config "FOSC" = 0x3, "WDTE" = 0x1, "PWRTE" = 0x1, "CP" = 0x303, "BOREN" = 0x1, "LVP" = 0x1, "CPD" = 0x1, "WRT" = 0x1, "DEBUG" = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;register&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : RC oscillator<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; FLASH Program Memory Code Protection bits : Code protection off<br/>; Brown-out Reset Enable bit : BOR enabled<br/>; Low Voltage In-Circuit Serial Programming Enable bit : RB3/PGM pin has PGM function; low-voltage programming enabled<br/>; Data EE Memory Code Protection : Code Protection off<br/>; FLASH Program Memory Write Enable : Unprotected program memory may be written to by EECON control<br/>; In-Circuit Debugger Mode bit : In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins<br/>config "CONFIG" = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>; IDLOC @ 0x2000<br/>config "IDLOC0" = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>Configuration Registers & Settings</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG @ 0x2007</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>FOSC</tt></b></td>
+<td><b>Oscillator Selection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EXTRC</tt></td>
+<td>RC oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>HS</tt></td>
+<td>HS oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>XT</tt></td>
+<td>XT oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>LP</tt></td>
+<td>LP oscillator</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WDTE</tt></b></td>
+<td><b>Watchdog Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>WDT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>WDT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>PWRTE</tt></b></td>
+<td><b>Power-up Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>PWRT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>PWRT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CP</tt></b></td>
+<td><b>FLASH Program Memory Code Protection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Code protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>All memory code protected</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BOREN</tt></b></td>
+<td><b>Brown-out Reset Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>BOR enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>BOR disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>LVP</tt></b></td>
+<td><b>Low Voltage In-Circuit Serial Programming Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>RB3/PGM pin has PGM function; low-voltage programming enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>RB3 is digital I/O, HV on MCLR must be used for programming</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CPD</tt></b></td>
+<td><b>Data EE Memory Code Protection</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Code Protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Data EEPROM memory code-protected</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WRT</tt></b></td>
+<td><b>FLASH Program Memory Write Enable</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ALL</tt></td>
+<td>Unprotected program memory may be written to by EECON control</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Unprotected program memory may not be written to by EECON control</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>DEBUG</tt></b></td>
+<td><b>In-Circuit Debugger Mode bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>In-Circuit Debugger disabled, RB6 and RB7 are general purpose I/O pins</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>In-Circuit Debugger enabled, RB6 and RB7 are dedicated to the debugger</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC0 @ 0x2000</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC1 @ 0x2001</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC2 @ 0x2002</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC3 @ 0x2003</div>
+</th>
+</tbody></table>
+<br/>
+</BODY>
+</HTML>

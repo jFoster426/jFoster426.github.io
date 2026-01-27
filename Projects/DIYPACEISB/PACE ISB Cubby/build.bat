@@ -1,0 +1,1 @@
+xc8-cc -mcpu=pic16f88 -mdfp="Microchip.PIC16Fxxx_DFP.1.7.162/xc8" -mno-keep-startup -nodefaultlibs -nostartfiles -mno-clink -mno-cmacros -Wa,-a -Wl,-preset_vec=0h -Wl,-pisr_vec=4h -o build/isb_cubby.hex isb_cubby.S

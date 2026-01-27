@@ -1,0 +1,244 @@
+<!-- Generated 26/03/2025 GMT -->
+
+<!--
+ Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ All rights reserved.
+ 
+ This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+ 
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ 
+     1. Redistributions of source code must retain the above copyright notice, this list of
+        conditions and the following disclaimer.
+ 
+     2. Redistributions in binary form must reproduce the above copyright notice, this list
+        of conditions and the following disclaimer in the documentation and/or other
+        materials provided with the distribution. Publication is not required when
+        this file is used in an embedded application.
+ 
+     3. Microchip's name may not be used to endorse or promote products derived from this
+        software without specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Microchip MPLAB XC8 C Compiler: 16HV753 Support Information</TITLE>
+</HEAD>
+<BODY>
+<h2>16HV753 Support Information</h2>
+<h3>XC8-CC #pragma config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;named value&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>// Watchdog Timer Enable bit : Watchdog Timer enabled<br/>// Power-up Timer Enable bit : Power-up Timer disabled<br/>// MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>// Code Protection bit : Program memory code protection is disabled<br/>// Brown-out Reset Enable bits : BOR enabled<br/>// Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>// Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>#pragma config FOSC0 = EC, WDTE = ON, PWRTE = OFF, MCLRE = ON, CP = OFF, BOREN = EN, WRT = OFF, CLKOUTEN = OFF</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>// Watchdog Timer Enable bit : Watchdog Timer enabled<br/>// Power-up Timer Enable bit : Power-up Timer disabled<br/>// MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>// Code Protection bit : Program memory code protection is disabled<br/>// Brown-out Reset Enable bits : BOR enabled<br/>// Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>// Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>#pragma config FOSC0 = 0x1, WDTE = 0x1, PWRTE = 0x1, MCLRE = 0x1, CP = 0x1, BOREN = 0x3, WRT = 0x3, CLKOUTEN = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;register&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>// Watchdog Timer Enable bit : Watchdog Timer enabled<br/>// Power-up Timer Enable bit : Power-up Timer disabled<br/>// MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>// Code Protection bit : Program memory code protection is disabled<br/>// Brown-out Reset Enable bits : BOR enabled<br/>// Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>// Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>#pragma config CONFIG = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>// IDLOC @ 0x2000<br/>#pragma config IDLOC0 = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>PIC-AS config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"="&lt;named value&gt;"</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>; Watchdog Timer Enable bit : Watchdog Timer enabled<br/>; Power-up Timer Enable bit : Power-up Timer disabled<br/>; MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>; Code Protection bit : Program memory code protection is disabled<br/>; Brown-out Reset Enable bits : BOR enabled<br/>; Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>; Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>config "FOSC0" = "EC", "WDTE" = "ON", "PWRTE" = "OFF", "MCLRE" = "ON", "CP" = "OFF", "BOREN" = "EN", "WRT" = "OFF", "CLKOUTEN" = "OFF"</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>; Watchdog Timer Enable bit : Watchdog Timer enabled<br/>; Power-up Timer Enable bit : Power-up Timer disabled<br/>; MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>; Code Protection bit : Program memory code protection is disabled<br/>; Brown-out Reset Enable bits : BOR enabled<br/>; Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>; Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>config "FOSC0" = 0x1, "WDTE" = 0x1, "PWRTE" = 0x1, "MCLRE" = 0x1, "CP" = 0x1, "BOREN" = 0x3, "WRT" = 0x3, "CLKOUTEN" = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;register&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; FOSC: Oscillator Selection bit : EC oscillator mode.  CLKIN function on RA5/CLKIN<br/>; Watchdog Timer Enable bit : Watchdog Timer enabled<br/>; Power-up Timer Enable bit : Power-up Timer disabled<br/>; MCLR/VPP Pin Function Select bit : MCLR pin is MCLR function with internal weak pullup<br/>; Code Protection bit : Program memory code protection is disabled<br/>; Brown-out Reset Enable bits : BOR enabled<br/>; Flash Program Memory Self Write Enable bit : Flash self-write protection off<br/>; Clock Out Enable bit : CLKOUT function disabled.  CLKOUT pin acts as I/O<br/>config "CONFIG" = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>; IDLOC @ 0x2000<br/>config "IDLOC0" = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>Configuration Registers & Settings</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG @ 0x2007</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>FOSC0</tt></b></td>
+<td><b>FOSC: Oscillator Selection bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EC</tt></td>
+<td>EC oscillator mode.  CLKIN function on RA5/CLKIN</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>INT</tt></td>
+<td>Internal oscillator mode.  I/O function on RA5/CLKIN</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WDTE</tt></b></td>
+<td><b>Watchdog Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Watchdog Timer enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Watchdog Timer disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>PWRTE</tt></b></td>
+<td><b>Power-up Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Power-up Timer disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Power-up Timer enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>MCLRE</tt></b></td>
+<td><b>MCLR/VPP Pin Function Select bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>MCLR pin is MCLR function with internal weak pullup</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>MCLR pin is alternate function</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CP</tt></b></td>
+<td><b>Code Protection bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Program memory code protection is disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Program memory code protection is enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BOREN</tt></b></td>
+<td><b>Brown-out Reset Enable bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>EN</tt></td>
+<td>BOR enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>SLEEP_DIS</tt></td>
+<td>BOR enabled during operation and disabled in Sleep</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>DIS</tt></td>
+<td>BOR disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WRT</tt></b></td>
+<td><b>Flash Program Memory Self Write Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Flash self-write protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>FOURTH</tt></td>
+<td>000h to 0FFh self-write protected</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>HALF</tt></td>
+<td>000h to 1FFh self-write protected</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ALL</tt></td>
+<td>000h to 3FFh self-write protected</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CLKOUTEN</tt></b></td>
+<td><b>Clock Out Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>CLKOUT function disabled.  CLKOUT pin acts as I/O</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>CLKOUT function enabled.  CLKOUT pin is CLKOUT</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC0 @ 0x2000</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC1 @ 0x2001</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC2 @ 0x2002</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC3 @ 0x2003</div>
+</th>
+</tbody></table>
+<br/>
+</BODY>
+</HTML>

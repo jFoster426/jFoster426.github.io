@@ -1,0 +1,24 @@
+/*
+    TRISA |= (1 << 0);      // RA0 = input
+    TRISB &= ~(1 << 4);     // RB4 = output
+    ANSEL = 0x00;           // Disable analog peripherals on all pins
+    OSCCON = 0b01110010;    // IRCF = 0b111 (8 MHz)
+                            // IOFS = 0 (not stable)
+                            // SCS = 0b10 (internal RC)
+    
+    while (1) {
+        TRISA &= ~(1 << 0); // RA0 output
+        PORTA |= (1 << 0);  // RA0 high (start pulse)
+        count = PULSE;      // Define pulse width
+        while (count > 0)   // Delay implementation
+            count--;
+        PORTA &= ~(1 << 0); // RA0 low (end pulse)
+        TRISA |= (1 << 0);  // RA0 input
+        // Wait for pin to go low
+        // Variable count is already 0
+        while (PORTA & (1 << 0)) count++;
+        // Set digital output based on sensor threshold defined above
+        if (count > THRESH) PORTB |= (1 << 4);
+        else                PORTB &= ~(1 << 4);
+    }
+*/

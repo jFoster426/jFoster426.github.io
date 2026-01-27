@@ -1,0 +1,258 @@
+<!-- Generated 26/03/2025 GMT -->
+
+<!--
+ Copyright © 2025, Microchip Technology Inc. and its subsidiaries ("Microchip")
+ All rights reserved.
+ 
+ This software is developed by Microchip Technology Inc. and its subsidiaries ("Microchip").
+ 
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+ 
+     1. Redistributions of source code must retain the above copyright notice, this list of
+        conditions and the following disclaimer.
+ 
+     2. Redistributions in binary form must reproduce the above copyright notice, this list
+        of conditions and the following disclaimer in the documentation and/or other
+        materials provided with the distribution. Publication is not required when
+        this file is used in an embedded application.
+ 
+     3. Microchip's name may not be used to endorse or promote products derived from this
+        software without specific prior written permission.
+ 
+ THIS SOFTWARE IS PROVIDED BY MICROCHIP "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+ PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL MICROCHIP BE LIABLE FOR ANY DIRECT, INDIRECT,
+ INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING BUT NOT LIMITED TO
+ PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA OR PROFITS; OR BUSINESS
+ INTERRUPTION) HOWSOEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+ LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF
+ THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+
+<HTML>
+<HEAD>
+<TITLE>Microchip MPLAB XC8 C Compiler: 16F721 Support Information</TITLE>
+</HEAD>
+<BODY>
+<h2>16F721 Support Information</h2>
+<h3>XC8-CC #pragma config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;named value&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>// Flash Program Memory Code Protection bit : Code protection off<br/>// Brown-out Reset Enable bits : Brown-out Reset enabled<br/>// INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>#pragma config FOSC = ECCLK, WDTE = ON, PWRTE = OFF, MCLRE = ON, CP = OFF, BOREN = ON, PLLEN = ON</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;setting&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>// Flash Program Memory Code Protection bit : Code protection off<br/>// Brown-out Reset Enable bits : Brown-out Reset enabled<br/>// INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>#pragma config FOSC = 0x3, WDTE = 0x1, PWRTE = 0x1, MCLRE = 0x1, CP = 0x1, BOREN = 0x3, PLLEN = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>#pragma config &lt;register&gt;=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>// Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>// Watchdog Timer Enable bit : WDT enabled<br/>// Power-up Timer Enable bit : PWRT disabled<br/>// RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>// Flash Program Memory Code Protection bit : Code protection off<br/>// Brown-out Reset Enable bits : Brown-out Reset enabled<br/>// INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>#pragma config CONFIG1 = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>// IDLOC @ 0x2000<br/>#pragma config IDLOC0 = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>PIC-AS config Usage</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"="&lt;named value&gt;"</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>; Flash Program Memory Code Protection bit : Code protection off<br/>; Brown-out Reset Enable bits : Brown-out Reset enabled<br/>; INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>config "FOSC" = "ECCLK", "WDTE" = "ON", "PWRTE" = "OFF", "MCLRE" = "ON", "CP" = "OFF", "BOREN" = "ON", "PLLEN" = "ON"</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;setting&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>; Flash Program Memory Code Protection bit : Code protection off<br/>; Brown-out Reset Enable bits : Brown-out Reset enabled<br/>; INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>config "FOSC" = 0x3, "WDTE" = 0x1, "PWRTE" = 0x1, "MCLRE" = 0x1, "CP" = 0x1, "BOREN" = 0x3, "PLLEN" = 0x1</code></td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="10">
+<tbody>
+<th colspan="1">
+<div align="left"><tt>config "&lt;register&gt;"=&lt;literal constant&gt;</tt></div>
+</th>
+<tr bgcolor="white">
+<td>For example:<br/><code>; Oscillator Selection bits : EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI<br/>; Watchdog Timer Enable bit : WDT enabled<br/>; Power-up Timer Enable bit : PWRT disabled<br/>; RA3/MCLR/VPP Pin Function Select bit : RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.<br/>; Flash Program Memory Code Protection bit : Code protection off<br/>; Brown-out Reset Enable bits : Brown-out Reset enabled<br/>; INTOSC PLLEN Enable Bit : INTOSC Frequency is 16 MHz (32x)<br/>config "CONFIG1" = 0x3FFF</code></td>
+</tr>
+<tr bgcolor="white">
+<td>For example:<br/><code>; IDLOC @ 0x2000<br/>config "IDLOC0" = 0x127</code></td>
+</tr>
+</tbody></table>
+<br/>
+<h3>Configuration Registers & Settings</h3>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG1 @ 0x2007</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>FOSC</tt></b></td>
+<td><b>Oscillator Selection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ECCLK</tt></td>
+<td>EC oscillator: CLKO function on RA4/CLKO pin, CLKI on RA5/CLKI</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ECIO</tt></td>
+<td>EC oscillator: I/O function on RA4/CLKO pin, CLKI on RA5/CLKI</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>INTOSCCLK</tt></td>
+<td>INTOSC oscillator: CLKO function on RA4/CLKO pin, I/O function on RA5/CLKI</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>INTOSCIO</tt></td>
+<td>INTOSCIO oscillator: I/O function on RA4/CLKO pin, I/O function on RA5/CLKI</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WDTE</tt></b></td>
+<td><b>Watchdog Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>WDT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>WDT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>PWRTE</tt></b></td>
+<td><b>Power-up Timer Enable bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>PWRT enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>PWRT disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>MCLRE</tt></b></td>
+<td><b>RA3/MCLR/VPP Pin Function Select bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>RA3/MCLR/VPP pin function is MCLR; Weak pull-up enabled.</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>RA3/MCLR/VPP pin function is digital input; MCLR internally disabled; Weak pull-up disabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>CP</tt></b></td>
+<td><b>Flash Program Memory Code Protection bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>0000h to 0FFFh code protection on</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Code protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>BOREN</tt></b></td>
+<td><b>Brown-out Reset Enable bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Brown-out Reset disabled (Preconditioned State)</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>NSLEEP</tt></td>
+<td>Brown-out Reset enabled during operation and disabled in Sleep</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>Brown-out Reset enabled</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><b><tt>PLLEN</tt></b></td>
+<td><b>INTOSC PLLEN Enable Bit</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>INTOSC Frequency is 500 kHz</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>ON</tt></td>
+<td>INTOSC Frequency is 16 MHz (32x)</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: CONFIG2 @ 0x2008</div>
+</th>
+<tr bgcolor="white">
+<td width="20%"><b><tt>WRTEN</tt></b></td>
+<td><b>Flash memory self-write protection bits</b></td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>OFF</tt></td>
+<td>Write protection off</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>BOOT</tt></td>
+<td>0h to 1FFh of flash memory write protected, 200h to FFFh may be modified</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>HALF</tt></td>
+<td>0h to 7FFh of flash memory write protected, 800h to FFFh may be modified</td>
+</tr>
+<tr bgcolor="white">
+<td width="20%"><tt>FULL</tt></td>
+<td>0h to FFFh of flash memory write protected, no address may be modified</td>
+</tr>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC0 @ 0x2000</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC1 @ 0x2001</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC2 @ 0x2002</div>
+</th>
+</tbody></table>
+<table bgcolor="lightgray" width="100%" cellpadding="2">
+<tbody>
+<th colspan="2">
+<div align="left">Register: IDLOC3 @ 0x2003</div>
+</th>
+</tbody></table>
+<br/>
+</BODY>
+</HTML>
