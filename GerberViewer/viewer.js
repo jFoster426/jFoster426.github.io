@@ -1,5 +1,10 @@
 const board = document.getElementById("board");
 
+let viewBox = [0, 0, 0, 0];
+let isPanning = false;
+let startPoint = { x: 0, y: 0 };
+let startViewBox = [viewBox];
+
 // To be filled with array from parent webpage depending on what we want to plot
 const layers = [];
 const layerColors = {};
@@ -137,13 +142,6 @@ async function loadSVG(file) {
     return { svgElement: importedSvg, minX, minY, width, height };
 }
 
-
-
-let viewBox = [0, 0, 0, 0];
-let isPanning = false;
-let startPoint = { x: 0, y: 0 };
-let startViewBox = [viewBox];
-
 // Mouse down -> start panning
 board.addEventListener("mousedown", (e) => {
     isPanning = true;
@@ -252,6 +250,7 @@ window.addEventListener("message", async (event) => {
         colorInput.style.marginLeft = "6px";
 
         colorInput.addEventListener("input", (e) => {
+            console.log("recolor");
             const layer = document.getElementById(e.target.dataset.layerId);
             if (layer) {
                 layer.querySelectorAll('.layer-recolor').forEach(el => {
@@ -294,8 +293,8 @@ window.addEventListener("message", async (event) => {
     }
 
     // Set viewBox to reference layer size
-    //viewBox = [globalMinX, globalMinY, globalMaxX - globalMinX, globalMaxY - globalMinY];
-    viewBox = [235, 525, 300, 300];
+    viewBox = [globalMinX, globalMinY, globalMaxX - globalMinX, globalMaxY - globalMinY];
+    //viewBox = [235, 525, 300, 300];
     board.setAttribute("viewBox", viewBox.join(" "));
     console.log(viewBox);
 });
