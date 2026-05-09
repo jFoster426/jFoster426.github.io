@@ -10,25 +10,50 @@ Thus spawned this development board with the bare minimum required to run the SA
 <br>
 <h1>Schematic</h1>
 <br>
-<pre class="text">
-TODO
-</pre>
 <br>
-<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/schematic.jpg" onclick="window.open('Projects/SAMD21DevBoard/schematic.jpg')">
+<img style="width: 80%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/schematic.jpg"
+    onclick="window.open('Projects/SAMD21DevBoard/schematic.jpg')">
 <pre class="text" style="text-align: center;"><i>Schematic for the project in Altium Designer</i></pre>
 <br>
 <br>
 <h1>PCB</h1>
 <br>
 <pre class="text">
-TODO
+The board breaks out all the I/O pins of the SAM as well as two separate 20 pin headers for the SWD interfaces. One SWD interface is dedicated to programming the SAM on this board, while the other interface is used to program the target board.
+
+GPIO pin headers are located at the bottom of the board while the SWD headers are on the right edge.
 </pre>
 <br>
-<img style="width: 40%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/pcb.png" onclick="window.open('Projects/SAMD21DevBoard/pcb.png')">
+<img style="width: 40%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/pcb.png"
+    onclick="window.open('Projects/SAMD21DevBoard/pcb.png')">
 <pre class="text" style="text-align: center;"><i>PCB 3D view of the board in Altium Designer</i></pre>
 <br>
-<img style="width: 40%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/pinout.png" onclick="window.open('Projects/SAMD21DevBoard/pinout.png')">
+<img style="width: 40%;" class="center-img cursor-pointer img-hover" src="Projects/SAMD21DevBoard/pinout.png"
+    onclick="window.open('Projects/SAMD21DevBoard/pinout.png')">
 <pre class="text" style="text-align: center;"><i>Close-up showing the pinout of each GPIO pin for the PCB</i></pre>
+<br>
+<br>
+<h1>Interactive Layout</h1>
+<br>
+<iframe src="GerberViewer/index.html" width="100%" height="800px" title="Interactive Layout" style="border: none" onload="contentWindow.postMessage(
+        [
+            //'../Projects/SAMD21DevBoard/board-svg/l1.svg', '#ff0000ff', 'l1'
+            '../Projects/SAMD21DevBoard/board-svg/silk_bot.svg', '#ffffffff', 'silk_bot',
+            '../Projects/SAMD21DevBoard/board-svg/paste_bot.svg', '#808080DD', 'paste_bot',
+            '../Projects/SAMD21DevBoard/board-svg/mask_bot.svg', '#008000AA', 'mask_bot',
+            '../Projects/SAMD21DevBoard/board-svg/l4.svg', '#0000ffff', 'l4',
+            '../Projects/SAMD21DevBoard/board-svg/l3.svg', '#00ffffff', 'l3', 
+            '../Projects/SAMD21DevBoard/board-svg/l2.svg', '#ffff00ff', 'l2',
+            '../Projects/SAMD21DevBoard/board-svg/l1.svg', '#ff0000ff', 'l1',
+            '../Projects/SAMD21DevBoard/board-svg/mask_top.svg', '#008000AA', 'mask_top',
+            '../Projects/SAMD21DevBoard/board-svg/paste_top.svg', '#808080DD', 'paste_top',
+            '../Projects/SAMD21DevBoard/board-svg/silk_top.svg', '#ffffffff', 'silk_top',
+            '../Projects/SAMD21DevBoard/board-svg/outline.svg', '#ffffffff', 'outline',
+            '../Projects/SAMD21DevBoard/board-svg/npth.svg', '#ffffff80', 'npth',
+            '../Projects/SAMD21DevBoard/board-svg/pth.svg', '#ffffff80', 'pth'
+        ]
+        , '*');">
+</iframe>
 <br>
 <br>
 <h1>Firmware</h1>
@@ -64,12 +89,15 @@ When the board is plugged into the computer, it will show up in Device Manager a
 The Altium PCB project and Gerber files can be downloaded from the link below.
 </pre>
 <br>
-<a class="url-pre" style="margin-left: 0px;" href="Projects/SAMD21DevBoard/SAMD21DevBoardHW.zip">Altium Project & Gerber Files</a>
+<a class="url-pre" style="margin-left: 0px;" href="Projects/SAMD21DevBoard/SAMD21DevBoardHW.zip">Altium Project & Gerber
+    Files</a>
 <br>
 <br>
-<pre class="text">The source code can be downloaded from the link below. The pre-built binaries are included in the make/build/ sub-folder.</pre>
+<pre
+    class="text">The source code can be downloaded from the link below. The pre-built binaries are included in the make/build/ sub-folder.</pre>
 <br>
-<a class="url-pre" style="margin-left: 0px;" href="Projects/SAMD21DevBoard/SAMD21DevBoardFW.zip">Firmware Source & Pre-Built Binaries</a>
+<a class="url-pre" style="margin-left: 0px;" href="Projects/SAMD21DevBoard/SAMD21DevBoardFW.zip">Firmware Source &
+    Pre-Built Binaries</a>
 <br>
 <br>
 <pre class="text" style="text-align: center"><i>Last Updated: 08 Nov 2025</i></pre>
