@@ -1,0 +1,70 @@
+<link rel="stylesheet" href="textcontent-stylesheet.css">
+<h1>Introduction</h1>
+<br>
+<pre class="text">
+This project creates a brake light flasher intended to be used on a motorcycle. When the brake is first applied, the rear brake light flashes a certain number of times, after which the light should remain on. This improves visibility for cars approaching the bike from behind, without continuously flashing the brake light which is illegal because it mimics emergency vehicle lights.
+
+An important aspect of the project is that it must be designed to fail with the brake light in the always on state, such that the circuit does not cause the brake light to stop working if the circuit itself were to fail.
+</pre>
+<br>
+<br>
+<h1>Mechanical</h1>
+<br>
+<pre class="text">
+The mechanical assembly is a simple construcion of ABS plastic for the bottom half, followed by TPU for the top half, which creates the flexible buttons. The two halves are sealed together using waterproof adhesive along the ridge of the bottom case half. The MOLEX connector on the top half extends from the board and allows the mating connector to attach which connects to the bike's wiring harness and the brake light.
+
+Since the buttons are moulded into the top case half, it is already difficult for water to enter the case. The only exposed opening is through the Molex header gap to the top case. I sealed this area with glue as well to eliminate the chance that water could flow onto the PCB. Before soldering the Molex header to the PCB, I used silicone caulking caked in between the Molex header and the PCB which should fill in the gaps between the Molex connector pins and its plastic housing. This makes the device completely waterproof and eliminates the need for potting the enclosure or conformal coating the PCB.
+</pre>
+<br>
+<br>
+<h1>Solidworks Screenshots</h1>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="http://cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/case_pcb.png" onclick="window.open('http:\/\/cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/case_pcb.png')">
+<pre class="text" style="text-align: center;"><i>Bottom case + PCB mounted inside</i></pre>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="http://cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/section.png" onclick="window.open('http:\/\/cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/section.png')">
+<pre class="text" style="text-align: center;"><i>Section view of the completed assembly</i></pre>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="http://cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/final_assy.png" onclick="window.open('http:\/\/cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/final_assy.png')">
+<pre class="text" style="text-align: center;"><i>Completed assembly</i></pre>
+<br>
+<br>
+<h1>Electronics</h1>
+<br>
+<pre class="text">
+The heart of the project is a PIC16F15213 (cheapest PIC I could find in stock at the time).
+
+The microcontroller's only purpose is to toggle the output a set number of times when the power is first applied. The microcontroller is used only because it is the cheapest and simplest way to create a circuit that blinks an LED a custom number of times.
+
+The microcontroller can store different modes in its built-in EEPROM. The modes may be cycled through using the button connected to RA4.
+
+There is an onboard LED that can be used for debugging purposes and to troubleshoot motorcycle wiring in case the brake light is mis-wired.
+
+The fail-safe mechanism is implemented using a couple transistors. The signal that comes from the PIC inhibits the flow of current through the P-FET. If the polyfuse blows or something happens to the PIC, the P-FET will remain on because of R9 pulling it down to COM. The only way that the brake light would stop working is if the P-FET fails open, which is unlikely.
+
+The P-FET can pass 2.9 A at an elevated ambient temperature of 70 C. The brake light was measured to draw TODO which is significantly less than the datasheet rating.
+
+Current passing through the device is protected via the 10 A fuse in the bike's fuse box (which controls the turn signals, brake light and horn). Current being drawn by the device itself is limited to 500 mA via a polyfuse.
+</pre>
+<br>
+<br>
+<h1>Schematic</h1>
+<br>
+<iframe src="http://cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/pcb/Production/schematic.pdf" width="100%" height="600px" style="border: none;"></iframe>
+<br>
+<br>
+<h1>PCB</h1>
+<br>
+<img style="width: 60%;" class="center-img cursor-pointer img-hover" src="http://cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/pcb3d.png" onclick="window.open('http:\/\/cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/img/pcb3d.png')">
+<br>
+<br>
+<h1>Interactive Layout</h1>
+<br>
+<iframe src="Projects/GerberViewer/index.html" width="100%" height="800px" title="Interactive Layout" style="border: none" onload="contentWindow.postMessage('http:\/\/cdn.jsdelivr.net/gh/jFoster426/BrakeLightFlasher/pcb/Production/BrakeLightFlasher_Gerbers.zip', '*');"></iframe>
+<br>
+<br>
+<h1>Firmware</h1>
+<br>
+<pre class="text">
+TODO.
+</pre>

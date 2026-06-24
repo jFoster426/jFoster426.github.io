@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gerber Viewer</title>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+    <script src="https://unpkg.com/whats-that-gerber@4.2.7/dist/whats-that-gerber.min.js"></script>
+    <script src="https://unpkg.com/gerber-to-svg@4.2.8/dist/gerber-to-svg.min.js"></script>
+
+    <link rel="stylesheet" href="viewer.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+</head>
+
+<body>
+    <div id="app">
+
+        <div id="header">
+            <h1>Gerber Viewer</h1>
+            <div class="hfill"></div>
+            <div id="url-row">
+                <div class="btn file-wrap">OPEN FILE
+                    <input type="file" accept=".zip" onchange="loadFromFile(this)">
+                </div>
+            </div>
+        </div>
+
+        <div id="sidebar">
+            <div id="sidebar-header">
+                LAYERS
+                <span class="toggle-all" onclick="toggleAll()">TOGGLE ALL</span>
+            </div>
+            <div id="layer-list"></div>
+
+            <div id="zoom-ctrl">
+                <button class="zbtn" onclick="zoom(0.8)" title="Zoom out">−</button>
+                <div id="zoom-pct">100%</div>
+                <button class="zbtn" onclick="zoom(1.25)" title="Zoom in">+</button>
+                <button class="zbtn" onclick="fitView()" title="Fit" style="font-size:0.6rem">FIT</button>
+            </div>
+
+            <div id="opacity-ctrl">
+                <div id="opacity-pct">50%</div>
+                <input id="orange" class="orange" type="range" oninput="orange(this.value)" min="20" max="100" value="50">
+            </div>
+
+        </div>
+
+        <div id="canvas-wrap">
+            <div id="pcb-canvas"></div>
+            <div id="status-overlay">
+                <div class="st-text" id="st-msg">No Gerber files loaded.</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="viewer.js"></script>
+</body>
+
+</html>
